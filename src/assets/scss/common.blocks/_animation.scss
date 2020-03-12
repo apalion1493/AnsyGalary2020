@@ -1,0 +1,23 @@
+@keyframes hoverLinkTo {
+  from {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  to {
+    opacity: 0;
+    bottom: 20px;
+  }
+}
+
+@keyframes hoverLinkFrom {
+  from {
+    opacity: 0;
+    bottom: 16px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}

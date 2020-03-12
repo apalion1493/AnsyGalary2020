@@ -1,0 +1,32 @@
+//other style
+@import "past-styles/style.min";
+
+//TEXT
+@import "common.blocks/text";
+
+//FONTS
+@import "common.blocks/fonts";
+
+//ANIMATIONS
+@import "common.blocks/animation";
+
+//pages
+@import "common.blocks/pages/home/old-style-home";
+@import "common.blocks/pages/home/first-screen-home";
+@import "common.blocks/pages/home/sell-out-section";
+@import "common.blocks/pages/home/designer-collections";
+@import "common.blocks/pages/home/selections-lists";
+@import "common.blocks/pages/home/main-text-section";
+@import "common.blocks/pages/home/visit-us";
+
+
+//blocks
+@import "common.blocks/blocks/header/header";
+@import "common.blocks/blocks/footer/footer";
+
+//elements
+@import "common.blocks/elements/product-card";
+@import "common.blocks/elements/design-category";
+
+//main styles
+@import "common.blocks/common";

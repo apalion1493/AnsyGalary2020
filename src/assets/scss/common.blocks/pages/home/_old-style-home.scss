@@ -1,0 +1,247 @@
+.page-home h1 {
+  color: #fff;
+}
+#carousel-box {
+  padding-top: 46px;
+}
+
+#online-carpet-store .theme-icon:before,
+#selection .theme-icon:before {
+  min-width: 32px;
+  min-height: 32px;
+}
+
+#online-carpet-store .panel-default {
+  border: #eae5e5 1px solid;
+}
+#online-carpet-store .panel-default>.panel-body {
+  padding: 24px;
+}
+#online-carpet-store .list-unstyled.row {
+  margin-top: 24px;
+}
+
+#header:after {
+  display: none;
+}
+
+#main-carousel .carousel-inner>li {
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+}
+
+#main-carousel .carousel-inner>li>.carousel-caption {
+  bottom: 185px;
+  text-shadow: none;
+}
+
+#special-offers .carousel-indicators li {
+  border-color: #ec5149;
+  background-color: #fff;
+}
+
+#special-offers .carousel-indicators .active {
+  background-color: #ec5149;
+}
+
+#online-carpet-store .media {
+  margin-bottom: 24px;
+}
+
+#online-carpet-store .media .theme-icon:before {
+  width: 50px;
+  height: 50px;
+}
+
+#online-carpet-store .panel {
+  background-color: #f6f6f6;
+}
+
+#online-carpet-store h3+p {
+  margin-bottom: 24px;
+}
+
+#online-carpet-store .panel {
+  margin-bottom: 0;
+}
+
+#carpets-of-manual-work .description {
+  margin-bottom: 50px;
+}
+#carpets-of-manual-work ul.row figure {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+#carpets-of-manual-work ul.row figure>img {
+  margin-left: 12px;
+}
+
+#main-slider {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#main-slider .slick-slide figure>figcaption {
+  bottom: 12px;
+  left: 12px;
+  right: auto;
+  /*background-color: rgba(0,0,0,.24);*/
+  background-color: rgba(0,0,0,.50);
+  display: inline-block;
+  padding: 12px 24px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+#showroom .list-of-media {
+  margin-top: 24px;
+}
+
+#selection li>a {
+  display: flex;
+  align-items: center;
+}
+#selection-by-manufacturer {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 1200px) {
+  #showroom {
+    background-image: url(/images/pages/home/showrooms.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+  }
+  #showroom .list-of-media {
+    margin-bottom: 48px;
+  }
+
+
+  #online-carpet-store .media {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  #showroom .row>div {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #online-carpet-store .panel .btn {
+    margin-bottom: 12px;
+    min-width: 200px;
+  }
+
+  #main-slider .slick-slide figure {
+    height: 550px;
+  }
+
+  #carpets-of-manual-work ul.row,
+  #online-carpet-store .description {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 1201px) {
+  #online-carpet-store .panel {
+    background: url(/images/pages/home/sections-of-carpets.png);
+    background-position: -270px -40px;
+    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+  }
+}
+
+@media (max-width: 1200px) {
+  #main-carousel .carousel-inner>li {
+    height: 420px;
+  }
+
+  #main-carousel .carousel-inner>li>.carousel-caption {
+    bottom: 60px;
+    text-shadow: none;
+  }
+
+  #showroom h2,
+  #showroom .h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .is-fullsize .slick-slide figure {
+    height: 320px;
+  }
+  #main-slider .slick-slide figure>figcaption {
+    left: auto;
+    bottom: auto;
+    top: 12px;
+    right: 12px;
+    padding: 8px 16px;
+  }
+  #main-slider h1 {
+    margin: 12px;
+  }
+}
+
+@media (max-width: 424px) {
+  #main-slider li[data-slick-index="3"]>figure>picture {
+    background-position: -320px;
+  }
+}
+
+#main-slider li figure picture a.all-picture-size{
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.slick-dots {
+  width: 50%;
+  left: 25%;
+}
+
+.collections-carpers {
+
+}
+
+.collections-carpers figure {
+  width: 100%;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-coll-div {
+  padding-top: 10px;
+  color: #333333;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.text-coll {
+  padding-top: 10px;
+  /*display: block;*/
+  color: #333333;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.collections-carpers li {
+  padding-bottom: 1px;
+}
+
+.collections-carpers .slick-slide {
+  height: auto;
+}
+
+.collections-carpers li span {
+  color: #777777;
+  font-size: 16px;
+}
+
+.page-home .thumbnail .caption {
+  max-width: 100%;
+}
