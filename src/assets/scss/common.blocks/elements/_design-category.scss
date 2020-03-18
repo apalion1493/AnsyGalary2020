@@ -42,4 +42,16 @@
       max-width: 100%;
     }
   }
+
+  @media (max-width: 767.98px) {
+    .design-category {
+      max-width: 241px;
+      margin-left: 14px;
+      margin-right: 14px;
+    }
+
+    .design-category__description {
+      padding-top: 17px;
+    }
+  }
 }

@@ -185,9 +185,7 @@
 
   @media (max-width: 991.98px) {
     .first-screen-home {
-
       .list-of-categories {
-
         figure>picture,
         figure:hover>picture {
           background-size: cover;
@@ -198,6 +196,135 @@
           display: inline-block;
         }
       }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .first-screen-home {
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .list-of-categories {
+
+        & > div {
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 2px;
+        }
+
+        .thumbnail {
+          max-width: 100%;
+          height: 164px;
+        }
+
+        figure:hover>picture,
+        figure>picture {
+          background-size: cover;
+          min-height: 164px;
+        }
+
+        figure>figcaption>p,
+        figure:hover>figcaption p {
+          margin-bottom: 0;
+          display: none;
+        }
+
+        figure>figcaption,
+        figure:hover>figcaption {
+          padding-top: 0;
+          padding-bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        .btn-outline {
+          display: none;
+        }
+      }
+
+      .list-of-categories figure>figcaption>div.h3,
+      .list-of-categories figure>figcaption>h3 {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #222222;
+        font-weight: normal;
+        background: rgba(255, 255, 255, .8);
+        width: 180px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .list-mini-categories {
+        margin-top: 0;
+
+        & > div {
+          padding-bottom: 2px;
+        }
+
+        & > div:nth-child(odd) {
+          padding-left: 0;
+          padding-right: 1px;
+        }
+
+        & > div:nth-child(even) {
+          padding-left: 1px;
+          padding-right: 0;
+        }
+
+        figure {
+          max-width: 100%;
+        }
+
+        .btn-outline {
+          display: none;
+        }
+
+        figcaption {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          padding: 0;
+
+          .h3 {
+            position: static;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #222222;
+            background: rgba(255, 255, 255, .8);
+            width: 164px;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .list-mini-categories figure:hover picture,
+      .list-mini-categories figure picture {
+        background-size: cover;
+      }
+
     }
   }
 }

@@ -20,13 +20,20 @@
 @import "common.blocks/pages/home/visit-us";
 
 
+@import "common.blocks/pages/catalog/common";
+@import "common.blocks/pages/catalog/catalog";
+
+
 //blocks
 @import "common.blocks/blocks/header/header";
 @import "common.blocks/blocks/footer/footer";
+@import "common.blocks/blocks/filtration/filtration";
 
 //elements
 @import "common.blocks/elements/product-card";
 @import "common.blocks/elements/design-category";
+@import "common.blocks/elements/checkbox";
+@import "common.blocks/elements/pagination";
 
 //main styles
 @import "common.blocks/common";

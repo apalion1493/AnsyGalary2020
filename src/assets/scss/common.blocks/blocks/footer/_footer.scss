@@ -4,6 +4,7 @@
     background: #F7F5F1;
     padding-top: 38px;
     padding-bottom: 35px;
+    overflow: hidden;
 
     .glyphicon-twitter:before {
       background-image: url(../img/icon/twitter.svg);
@@ -116,11 +117,20 @@
   }
 
   .footer__block-phone {
+    display: flex;
+    align-items: center;
+
     * {
       font-size: 14px;
       line-height: 17px;
       color: #777777;
     }
+  }
+
+  .footer__block-phone-num {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
   }
 
   @media (max-width: 1199.98px) {
@@ -186,6 +196,49 @@
 
     #footer>div {
       margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .footer {
+      padding-bottom: 30px;
+    }
+
+    #footer {
+      .form-control {
+        min-width: auto;
+        width: 100%;
+      }
+
+      .list-of-social-buttons {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+        
+        & > li:nth-child(2),
+        & > li:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    .footer__block-connection {
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > div:first-child {
+        margin-right: auto;
+      }
+    }
+
+    .footer__block-phone {
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+
+    .footer__block-phone-num {
+      flex-direction: column;
+      margin-left: 10px;
     }
   }
 }

@@ -21,7 +21,7 @@
   }
 
   .main-text__order-container {
-    padding: 26px 51px 42px 36px;
+    padding: 30px 51px 42px 36px;
   }
 
   .main-text__order-title {
@@ -54,12 +54,12 @@
   }
 
   p.main-text__paragraph {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   .main-text__list-container-1 {
-    margin-top: 29px;
-    margin-bottom: 20px;
+    margin-top: 32px;
+    margin-bottom: 22px;
     display: flex;
     justify-content: space-between;
 
@@ -174,6 +174,93 @@
     .main-text__order-title {
       font-size: 18px;
       line-height: 22px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .main-text_section {
+      margin-top: 33px;
+      
+      .h2 {
+        text-align: center;
+      }
+
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .row > div:first-child {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .main-text__order-title {
+      margin-bottom: 27px;
+    }
+
+    .main-text__order-text {
+      margin-bottom: 35px;
+    }
+
+    .main-text__order {
+      margin-right: 0;
+      margin-bottom: 49px;
+      max-width: 100%;
+    }
+
+    .main-text__order-img {
+      max-width: 500px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-text__order-container {
+      .gold-button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .main-text__wrapper {
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-left: 0;
+    }
+
+    .main-text__list-container-3 {
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        padding-left: 25px !important;
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      li {
+        max-width: 100%;
+        margin-bottom: 24px !important;
+      }
+    }
+
+    .main-text__list-container-1 {
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        width: 100%;
+
+        li {
+          margin-bottom: 18px !important;
+          
+          br {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

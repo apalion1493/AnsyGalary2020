@@ -1,0 +1,47 @@
+
+.pagination-new {
+  margin-top: 36px;
+  margin-bottom: 27px;
+}
+
+.pagination-new>.active>a,
+.pagination-new>.active>a:focus,
+.pagination-new>.active>a:hover,
+.pagination-new>.active>span,
+.pagination-new>.active>span:focus,
+.pagination-new>.active>span:hover {
+  background: #BEA267;
+  border-color: #BEA267;
+}
+
+.pagination-new>li>a, .pagination-new>li>span {
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #555555;
+  min-width: 30px;
+}
+
+.paginator .pagination-new .disabledBlock .dropdown  {
+  padding: 7px 0;
+}
+
+.paginator .pagination-new .disabledBlock .dropdown-menu>li>a:hover,
+.paginator .pagination-new>li>a:hover,
+.paginator .pagination-new>li>span:hover {
+  color: #BEA267;
+}
+
+.pagination-new .caret {
+  border: none;
+  background: url("../img/icon/arrow-paginator.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 8px;
+  height: 4px;
+}
+
+.paginator .pagination-new .disabledBlock .dropdown-toggle {
+  padding: 0;
+}

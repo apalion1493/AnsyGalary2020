@@ -37,7 +37,7 @@
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .selections-lists__ul {
@@ -118,6 +118,21 @@
       .selections-lists__ul {
         max-height: 210px;
       }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .selections-lists {
+      padding-top: 39px;
+    }
+
+    .selections-lists__title {
+      font-size: 20px;
+      margin-bottom: 17px;
+    }
+
+    .selections-lists__container-margin {
+      margin-top: 43px;
     }
   }
 }

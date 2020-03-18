@@ -1,6 +1,6 @@
 .new-design2020 {
   .visit-us {
-    margin-top: 52px;
+    margin-top: 56px;
     margin-bottom: 9px;
   }
 
@@ -54,5 +54,53 @@
     color: #333333;
     padding-left: 21px;
     padding-right: 20px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: 767px) {
+    .visit-us {
+      margin-top: 23px;
+
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .visit-us__bg {
+      margin-left: -8px;
+      margin-right: -8px;
+      width: calc(100% + 16px);
+    }
+
+    .visit-us__title {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    .visit-us__address {
+      padding-left: 6px;
+      padding-right: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      br {
+        display: none;
+      }
+    }
+
+    .visit-us__wrapper {
+      height: auto;
+      max-width: 302px;
+    }
+
+    .visit-us__wrapper-two {
+      padding-bottom: 27px;
+      padding-top: 27px;
+    }
   }
 }

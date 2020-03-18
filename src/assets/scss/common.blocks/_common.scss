@@ -16,6 +16,10 @@ html, body {
     overflow-x: hidden;
   }
 
+  .text-bold {
+    font-weight: bold;
+  }
+
   .row {
     width: 100%;
   }
@@ -381,16 +385,36 @@ html, body {
       transition: 0.2s;
     }
   }
+}
 
-  @media (max-width: 992px) {
-    body.new-design2020 {
-      padding-top: 0;
+@media (max-width: 992px) {
+  body.new-design2020 {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.new-design2020 {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.new-design2020 {
+    padding-bottom: 0;
+    padding-top: 51px;
+
+    .multiple-items {
+      margin-bottom: 37px;
+
+      .slick-track {
+        display: flex;
+        align-items: flex-end;
+      }
     }
   }
 
-  @media (max-width: 991.98px) {
-    body.new-design2020 {
-      padding-top: 70px;
-    }
-  }
+  //.new-design2020 .multiple-items {
+  //  padding-left: 20px;
+  //}
 }

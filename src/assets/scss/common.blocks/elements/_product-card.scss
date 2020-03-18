@@ -53,6 +53,10 @@
   }
 
   .product-card__img {
+    height: 100%;
+    display: block;
+    position: relative;
+
     img {
       width: 100%;
       min-height: 375px;
@@ -99,12 +103,123 @@
     overflow-x: hidden;
     max-width: 166px;
   }
+  
+  .product-card__description-mobil {
+    display: none;
+  }
+
+  .product-card__liked {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 25px;
+    height: 22px;
+    background: url("../img/icon/like-icon-hollow.svg") no-repeat center;
+    background-size: 100% auto;
+    display: block;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &.active {
+      background: url("../img/icon/like-icon-active.svg") no-repeat center;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  .product-card__discounts {
+    position: absolute;
+    top: 26px;
+    right: 17px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #E04641;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+
+
+
+  .product-card_catalogVersion {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 30px 24px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      transition: 0.2s;
+
+      .product-card__liked {
+        opacity: 1;
+        z-index: 1;
+        transition: 0.2s;
+      }
+    }
+
+    .product-card__img img {
+      min-height: 501px;
+    }
+
+    .product-card__description {
+      padding-top: 14px;
+    }
+  }
 
   @media (max-width: 1199.98px) {
     .product-card {
       margin-left: 15px;
       margin-right: 15px;
       max-width: 100%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .product-card {
+      max-width: 196px;
+    }
+
+    .product-card__img {
+      img {
+        min-height: auto;
+        margin-top: auto;
+        display: block;
+      }
+    }
+    
+    .product-card__description-desktop {
+      display: none;
+    }
+
+    .product-card__description-mobil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-card__description-price {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .product-card__description-price-current {
+      margin-right: 6px;
+      font-size: 12px;
     }
   }
 }

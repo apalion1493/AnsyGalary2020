@@ -1,0 +1,28 @@
+.catalog-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 33%;
+  max-width: 400px;
+}
+
+.catalog-page__bottomBlock {
+  max-width: 821px;
+  margin-top: 75px;
+  margin-bottom: 44px;
+}
+
+.catalog-page__bottomBlock-text {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+  color: #777777;
+}
