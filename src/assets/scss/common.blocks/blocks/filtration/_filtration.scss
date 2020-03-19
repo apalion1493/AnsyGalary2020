@@ -1,4 +1,3 @@
-
 .accordion {
   background-color: initial;
   display: flex;
@@ -10,7 +9,7 @@
   text-transform: uppercase;
   color: #777777;
   cursor: pointer;
-  padding: 18px 0 25px;
+  padding: 18px 0 17px;
   width: 100%;
   border: none;
   text-align: left;
@@ -96,19 +95,22 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .marked-block {
-  padding: 4px 9px 4px 10px;
+  padding: 0 9px 0 10px;
   background: #F7F5F1;
   border: 1px solid #EAE8E4;
   display: inline-block;
   margin-bottom: 8px;
+  height: 25px;
 
   span {
     font-size: 14px;
     line-height: 17px;
     color: #777777;
+    vertical-align: middle;
   }
 
   button {
@@ -118,6 +120,7 @@
     background-size: 100% auto;
     width: 7px;
     height: 7px;
+    vertical-align: middle;
 
     &:focus {
       outline: none;
@@ -126,7 +129,7 @@
 }
 
 .marked-block-container {
-  margin-bottom: 14px;
+  margin-bottom: 7px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -141,12 +144,14 @@
 .filtration__header-block {
   display: flex;
   flex-direction: column;
-  margin-left: 13px;
+  margin-left: 12px;
 }
 
 .filtration__header {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  margin-bottom: 8px;
 }
 
 .filtration__header-arrow {
@@ -156,4 +161,93 @@
   height: 16px;
   display: block;
   border: none;
+  transition: 0.2s;
+  margin-bottom: 1px;
+  margin-left: -1px;
+}
+
+.filtration__header-text-second {
+  display: none;
+}
+
+.filtration__wrapper-2 {
+  .panel {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+
+  .checkbox-block {
+    padding-left: 26px;
+  }
+
+  .accordion_nested {
+    padding-top: 10px;
+    padding-bottom: 6px;
+  }
+
+  .accordion_nested-form-container {
+    margin-top: 3px;
+  }
+
+  button.filtration__wrapper-btn {
+    margin-top: 11px;
+    max-width: 180px;
+    height: 43px;
+  }
+
+}
+
+.filtration__wrapper-3 {
+  .accordion {
+    padding-bottom: 20px;
+  }
+
+  .checkbox-block {
+    padding-left: 27px;
+  }
+
+  .panel {
+    margin-bottom: 17px;
+  }
+}
+
+.filtration__wrapper-4 {
+  .checkbox-block {
+    padding-left: 27px;
+  }
+
+  .panel {
+    margin-bottom: 29px;
+  }
+}
+
+.filtration__wrapper-5 {
+  .checkbox-block {
+    padding-left: 27px;
+  }
+
+  .panel {
+    margin-bottom: 29px;
+  }
+}
+
+.filtration__wrapper-6 {
+  .checkbox-block {
+    padding-left: 27px;
+  }
+
+  .panel {
+    margin-bottom: 41px;
+  }
+
+}
+
+.filtration__wrapper-7 {
+  .panel {
+    margin-top: 9px;
+  }
+
+  .checkbox-block {
+    padding-left: 27px;
+  }
 }

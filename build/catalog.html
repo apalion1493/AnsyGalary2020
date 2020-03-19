@@ -109,24 +109,27 @@
         </div>
     </div>
 </header>
-<main class="common catalog-page">
+<main id="catalog-page" class="common catalog-page "> <!--catalog-page_filterNo-->
     <div class="container">
         <div class="row mx-0">
             <div class="col-md-12">
-                <div>
-                    <h1 class="h1">КЛАССИЧЕСКИЕ КОВРЫ</h1>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="filtration filtration_open">
-                    <div class="filtration__header">
+                <div class="catalog-page__header">
+                    <div id="filtration__header" class="filtration__header">
                         <button class="filtration__header-arrow"></button>
                         <div class="filtration__header-block">
                             <span class="filtration__header-text filtration__header-text-first">Свернуть фильтр</span>
                             <span class="filtration__header-text filtration__header-text-second">Развернуть фильтр</span>
                         </div>
                     </div>
-
+                    <h1 class="h1 catalog-page__title">КЛАССИЧЕСКИЕ КОВРЫ</h1>
+                    <div class="catalog-page__scale reduced"> <!--enlarged-->
+                        <span class="catalog-page__scale-reduce"></span>
+                        <span class="catalog-page__scale-increase"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 catalog-page__left-column">
+                <div class="filtration filtration_open">
                     <div class="marked-block-container">
                         <div class="marked-block">
                             <span>Традиционный</span>
@@ -142,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-1">
                         <button class="accordion">По стилю <i></i></button>
                         <div class="panel">
                             <span class="accordion__text text-bold">Классические</span>
@@ -171,7 +174,7 @@
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-2">
                         <button class="accordion">Размер <i></i></button>
                         <div class="panel">
                             <label class="checkbox-block">до 200 x 150 см
@@ -207,7 +210,7 @@
                                 <span class="checkmark"></span>
                             </label>
 
-                            <div>
+                            <div class="filtration__wrapper-2-footer">
                                 <button class="accordion accordion_nested">Указать свой размер <i></i></button>
                                 <div class="panel">
                                     <div class="accordion_nested-form">
@@ -231,13 +234,13 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn gold-button">Применить</button>
+                                    <button class="btn gold-button filtration__wrapper-btn">Применить</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-3">
                         <button class="accordion">Форма <i></i></button>
                         <div class="panel">
                             <label class="checkbox-block">Круглые
@@ -255,7 +258,7 @@
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-4">
                         <button class="accordion">Материал <i></i></button>
                         <div class="panel">
                             <label class="checkbox-block">Шерстяные
@@ -273,7 +276,7 @@
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-5">
                         <button class="accordion">Узор <i></i></button>
                         <div class="panel">
                             <label class="checkbox-block">Абстракция
@@ -299,7 +302,7 @@
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-6">
                         <button class="accordion">Страна <i></i></button>
                         <div class="panel">
                             <label class="checkbox-block">Персидские
@@ -349,7 +352,7 @@
                         </div>
                     </div>
 
-                    <div class="filtration__wrapper">
+                    <div class="filtration__wrapper filtration__wrapper-7">
                         <button class="accordion">Цена <i></i></button>
                         <div class="panel">
                             <label class="checkbox-block">до 100 000 ₽
@@ -368,7 +371,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 catalog-page__right-column">
                 <div class="catalog-section">
                     <div class="catalog-list">
                         <div class="catalog-item">
@@ -760,14 +763,11 @@
                         </li>
                         </ul>
                     </div>
-                    <button class="gold-button mx-auto">Показать все</button>
+                    <button class="gold-button catalog-page__button mx-auto">Показать все</button>
                     <div class="catalog-page__bottomBlock">
                         <p class="catalog-page__bottomBlock-text">Интернет-магазин ANSY Carpet предлагает классические ковры ручной работы с бесплатной доставкой и примеркой по Москве и МО. На нашем сайте представлены ковры из Ирана, Индии, Турции и Китая с традиционными рисунками в стиле восточной и европейской классики.</p>
-                        <br>
                         <p class="catalog-page__bottomBlock-text">Напольные ковры ручной вязки ANSY изготовлены из материалов отменного качества: тончайшей овечьей шерсти, натурального шелка, бамбука. Они отлично дополнят интерьер гостиной, спальни или кухни в классическом, викторианском, этническом, рустикальном и даже современном стиле.</p>
-                        <br>
                         <p class="catalog-page__bottomBlock-text">Размещенные в каталоге фотографии помогут вам подобрать и купить классический ковер подходящего дизайна. Вы всегда можете воспользоваться онлайн консультацией декоратора или бесплатно вызвать специалиста на дом.</p>
-                        <br>
                         <p class="catalog-page__bottomBlock-text">Посмотрите наши фото классических ковров в интерьере.</p>
                     </div>
                 </div>
@@ -1001,6 +1001,12 @@
             }
         });
     }
+
+    let filterButtonClose = document.querySelector('#filtration__header');
+    let catalogPage = document.querySelector('#catalog-page');
+    filterButtonClose.addEventListener('click', function () {
+        catalogPage.classList.toggle("catalog-page_filterNo");
+    })
 
 </script>
 </body>

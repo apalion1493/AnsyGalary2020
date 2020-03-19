@@ -156,7 +156,8 @@
   .product-card_catalogVersion {
     max-width: 100%;
     width: 100%;
-    padding: 20px 30px 24px;
+    padding: 20px 30px 28px;
+    margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     transition: 0.2s;
@@ -178,6 +179,10 @@
 
     .product-card__description {
       padding-top: 14px;
+    }
+
+    .product-card__description-title {
+      margin-bottom: 9px;
     }
   }
 
