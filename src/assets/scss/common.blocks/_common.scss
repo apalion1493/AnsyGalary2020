@@ -385,6 +385,25 @@ html, body {
       transition: 0.2s;
     }
   }
+
+  .gold-button-bg {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #BEA267;
+    background: #BEA267;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: #ffffff;
+      color: #BEA267;
+      transition: 0.2s;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -413,8 +432,4 @@ html, body {
       }
     }
   }
-
-  //.new-design2020 .multiple-items {
-  //  padding-left: 20px;
-  //}
 }
