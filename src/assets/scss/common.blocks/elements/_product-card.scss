@@ -91,6 +91,13 @@
     }
   }
 
+  .product-card__description-price-absent {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #777777;
+  }
+
   .product-card__description-price-current {
     margin-bottom: 0;
     font-size: 13px;

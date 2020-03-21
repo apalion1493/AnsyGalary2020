@@ -34,12 +34,20 @@
   }
 
   &.accordion_nested {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #BEA267;
     text-transform: initial;
     padding-bottom: 16px;
+
+    i {
+      background: url("../img/icon/gold-arrow-icon.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 12px;
+      height: 12px;
+      margin-left: 10px;
+    }
   }
 }
 
@@ -181,7 +189,7 @@
   }
 
   .accordion_nested {
-    padding-top: 10px;
+    padding-top: 4px;
     padding-bottom: 6px;
   }
 

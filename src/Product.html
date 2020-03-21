@@ -115,7 +115,7 @@
             <div class="row mx-0">
                 <div class="col-md-8">
                     <div>
-                        <img class="w100" src="assets/img/test-img.png" alt="">
+                        <img class="w-100" src="assets/img/test-img.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -141,7 +141,9 @@
                                         <span>246 x 163 см</span>
                                     </div>
                                 </div>
-                                <button class="gold-button-bg product-page__block-btn" type="button"><i></i>Выбрать ковер</button>
+                                <div class="product-page__block-main-btnGroup">
+                                    <button class="gold-button-bg product-page__block-btn" type="button"><i></i>Выбрать ковер</button>
+                                </div>
                             </div>
                             <div class="product-page__block-footer">
                                 <i class="product-page__block-footer-icon"></i>
@@ -222,90 +224,95 @@
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <div>
-                        <h2 class="h2">ПОХОЖИЕ МОДЕЛИ</h2>
-                        <div>
-                            <figure class="product-card">
-                                <picture class="product-card__img">
-                                    <a href="#">
-                                        <img class="w-100" src="assets/img/home/test-img-carpet.png" alt="">
-                                    </a>
-                                    <div class="product-card__liked"></div>
-                                </picture>
-                                <figcaption class="product-card__description product-card__description-desktop">
-                                    <div class="product-card__description-text">
-                                        <p class="product-card__description-title"><a href="#">Reflection Sky</a> <i></i> <span>№ 3677</span></p>
-                                        <p class="product-card__description-parameters">184 х 125 см, <span>шерсть</span></p>
-                                    </div>
-                                    <div class="product-card__description-price">
-                                        <span class="product-card__description-price-old">194 000</span>
-                                        <p class="product-card__description-price-current">194 000 ₽</p>
-                                    </div>
-                                </figcaption>
-                                <figcaption class="product-card__description product-card__description-mobil">
-                                    <div class="product-card__description-text">
-                                        <p class="product-card__description-title"><a href="#">Reflection Sky</a></p>
-                                    </div>
-                                    <div class="product-card__description-price">
-                                        <span class="product-card__description-price-old">194 000</span>
-                                        <p class="product-card__description-price-current">194 000 ₽</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="product-card">
-                                <picture class="product-card__img">
-                                    <a href="#">
-                                        <img class="w-100" src="assets/img/home/test-img-carpet.png" alt="">
-                                    </a>
-                                    <div class="product-card__liked"></div>
-                                </picture>
-                                <figcaption class="product-card__description product-card__description-desktop">
-                                    <div class="product-card__description-text">
-                                        <p class="product-card__description-title"><a href="#">Reflection Sky</a> <i></i> <span>№ 3677</span></p>
-                                        <p class="product-card__description-parameters">184 х 125 см, <span>шерсть</span></p>
-                                    </div>
-                                    <div class="product-card__description-price">
-                                        <span class="product-card__description-price-old">194 000</span>
-                                        <p class="product-card__description-price-current">194 000 ₽</p>
-                                    </div>
-                                </figcaption>
-                                <figcaption class="product-card__description product-card__description-mobil">
-                                    <div class="product-card__description-text">
-                                        <p class="product-card__description-title"><a href="#">Reflection Sky</a></p>
-                                    </div>
-                                    <div class="product-card__description-price">
-                                        <span class="product-card__description-price-old">194 000</span>
-                                        <p class="product-card__description-price-current">194 000 ₽</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="product-card">
-                                <picture class="product-card__img">
-                                    <a href="#">
-                                        <img class="w-100" src="assets/img/home/test-img-carpet.png" alt="">
-                                    </a>
-                                    <div class="product-card__liked"></div>
-                                </picture>
-                                <figcaption class="product-card__description product-card__description-desktop">
-                                    <div class="product-card__description-text">
-                                        <p class="product-card__description-title"><a href="#">Reflection Sky</a> <i></i> <span>№ 3677</span></p>
-                                        <p class="product-card__description-parameters">184 х 125 см, <span>шерсть</span></p>
-                                    </div>
-                                    <div class="product-card__description-price">
-                                        <span class="product-card__description-price-old">194 000</span>
-                                        <p class="product-card__description-price-current">194 000 ₽</p>
-                                    </div>
-                                </figcaption>
-                                <figcaption class="product-card__description product-card__description-mobil">
-                                    <div class="product-card__description-text">
-                                        <p class="product-card__description-title"><a href="#">Reflection Sky</a></p>
-                                    </div>
-                                    <div class="product-card__description-price">
-                                        <span class="product-card__description-price-old">194 000</span>
-                                        <p class="product-card__description-price-current">194 000 ₽</p>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                    <div class="product-page__similar">
+                        <h2 class="h2 product-page__similar-title">ПОХОЖИЕ МОДЕЛИ</h2>
+                        <div class="product-page__similar-wrapper">
+                            <div class="product-page__similar-card">
+                                <figure class="product-card">
+                                    <picture class="product-card__img">
+                                        <a href="#">
+                                            <img class="w-100" src="assets/img/home/test-img-carpet.png" alt="">
+                                        </a>
+                                        <div class="product-card__liked"></div>
+                                    </picture>
+                                    <figcaption class="product-card__description product-card__description-desktop">
+                                        <div class="product-card__description-text">
+                                            <p class="product-card__description-title"><a href="#">Reflection Sky</a> <i></i> <span>№ 3677</span></p>
+                                            <p class="product-card__description-parameters">184 х 125 см, <span>шерсть</span></p>
+                                        </div>
+                                        <div class="product-card__description-price">
+                                            <span class="product-card__description-price-old">194 000</span>
+                                            <p class="product-card__description-price-current">194 000 ₽</p>
+                                        </div>
+                                    </figcaption>
+                                    <figcaption class="product-card__description product-card__description-mobil">
+                                        <div class="product-card__description-text">
+                                            <p class="product-card__description-title"><a href="#">Reflection Sky</a></p>
+                                        </div>
+                                        <div class="product-card__description-price">
+                                            <span class="product-card__description-price-old">194 000</span>
+                                            <p class="product-card__description-price-current">194 000 ₽</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="product-page__similar-card">
+                                <figure class="product-card">
+                                    <picture class="product-card__img">
+                                        <a href="#">
+                                            <img class="w-100" src="assets/img/home/test-img-carpet.png" alt="">
+                                        </a>
+                                        <div class="product-card__liked"></div>
+                                    </picture>
+                                    <figcaption class="product-card__description product-card__description-desktop">
+                                        <div class="product-card__description-text">
+                                            <p class="product-card__description-title"><a href="#">Reflection Sky</a> <i></i> <span>№ 3677</span></p>
+                                            <p class="product-card__description-parameters">184 х 125 см, <span>шерсть</span></p>
+                                        </div>
+                                        <div class="product-card__description-price">
+                                            <span class="product-card__description-price-absent">цена по запросу</span>
+                                        </div>
+                                    </figcaption>
+                                    <figcaption class="product-card__description product-card__description-mobil">
+                                        <div class="product-card__description-text">
+                                            <p class="product-card__description-title"><a href="#">Reflection Sky</a></p>
+                                        </div>
+                                        <div class="product-card__description-price">
+                                            <span class="product-card__description-price-old">194 000</span>
+                                            <p class="product-card__description-price-current">194 000 ₽</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="product-page__similar-card">
+                                <figure class="product-card">
+                                    <picture class="product-card__img">
+                                        <a href="#">
+                                            <img class="w-100" src="assets/img/home/test-img-carpet.png" alt="">
+                                        </a>
+                                        <div class="product-card__liked"></div>
+                                    </picture>
+                                    <figcaption class="product-card__description product-card__description-desktop">
+                                        <div class="product-card__description-text">
+                                            <p class="product-card__description-title"><a href="#">Reflection Sky</a> <i></i> <span>№ 3677</span></p>
+                                            <p class="product-card__description-parameters">184 х 125 см, <span>шерсть</span></p>
+                                        </div>
+                                        <div class="product-card__description-price">
+                                            <span class="product-card__description-price-old">194 000</span>
+                                            <p class="product-card__description-price-current">194 000 ₽</p>
+                                        </div>
+                                    </figcaption>
+                                    <figcaption class="product-card__description product-card__description-mobil">
+                                        <div class="product-card__description-text">
+                                            <p class="product-card__description-title"><a href="#">Reflection Sky</a></p>
+                                        </div>
+                                        <div class="product-card__description-price">
+                                            <span class="product-card__description-price-old">194 000</span>
+                                            <p class="product-card__description-price-current">194 000 ₽</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
                 </div>

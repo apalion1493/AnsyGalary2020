@@ -406,6 +406,15 @@ html, body {
   }
 }
 
+@media (min-width: 1200px) {
+  body.new-design2020 {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   body.new-design2020 {
     padding-top: 0;
