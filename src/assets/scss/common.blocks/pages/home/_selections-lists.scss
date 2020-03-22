@@ -123,7 +123,7 @@
 
   @media (max-width: 767px) {
     .selections-lists {
-      padding-top: 39px;
+      padding-top: 35px;
     }
 
     .selections-lists__title {
@@ -131,8 +131,20 @@
       margin-bottom: 17px;
     }
 
+    .selections-lists__ul {
+      padding-left: 23px;
+    }
+
+    .selections-lists__item {
+      width: 167px;
+    }
+
     .selections-lists__container-margin {
-      margin-top: 43px;
+      margin-top: 5px;
+
+      .selections-lists__title {
+        margin-bottom: 17px;
+      }
     }
   }
 }

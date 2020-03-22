@@ -8,6 +8,10 @@ html, body {
 
 .new-design2020 {
 
+  .colorGold {
+    color: #BEA267 !important;
+  }
+
   .container {
     max-width: 1186px;
   }
@@ -433,7 +437,7 @@ html, body {
     padding-top: 51px;
 
     .multiple-items {
-      margin-bottom: 37px;
+      margin-bottom: 39px;
 
       .slick-track {
         display: flex;

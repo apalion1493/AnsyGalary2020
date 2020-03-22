@@ -160,6 +160,10 @@
     display: block;
   }
 
+  .main-text__wrapper-mobil-btn {
+    display: none;
+  }
+
 
   @media (max-width: 991.98px) {
     .main-text__order {
@@ -179,10 +183,11 @@
 
   @media (max-width: 767px) {
     .main-text_section {
-      margin-top: 33px;
+      margin-top: 7px;
       
       .h2 {
         text-align: center;
+        margin-bottom: 16px;
       }
 
       .container {
@@ -201,12 +206,12 @@
     }
 
     .main-text__order-text {
-      margin-bottom: 35px;
+      margin-bottom: 21px;
     }
 
     .main-text__order {
       margin-right: 0;
-      margin-bottom: 49px;
+      margin-bottom: 33px;
       max-width: 100%;
     }
 
@@ -218,6 +223,8 @@
     }
 
     .main-text__order-container {
+      padding: 19px 19px 24px 19px;
+
       .gold-button {
         margin-left: auto;
         margin-right: auto;
@@ -261,6 +268,54 @@
           }
         }
       }
+    }
+
+    .main-text__wrapper-mobil-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #BEA267;
+      margin-top: 27px;
+
+      i {
+        background: url("../img/icon/gold-arrow-icon.svg") no-repeat center;
+        background-size: 100% auto;
+        width: 8px;
+        height: 8px;
+        display: block;
+        margin-left: 6px;
+        transform: rotate(180deg);
+      }
+    }
+
+    .main-text__wrapper.active {
+      .main-text__wrapper-mobil-btn {
+        i {
+          transform: rotate(0deg);
+        }
+      }
+
+      .main-text__wrapper-mobil-bottom {
+        display: block;
+      }
+    }
+
+    .main-text__wrapper-mobil-bottom {
+      padding-top: 20px;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .main-text__order-img {
+      max-height: 397px;
     }
   }
 }
