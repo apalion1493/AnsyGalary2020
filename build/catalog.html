@@ -15,7 +15,7 @@
 <header id="header" class="header">
     <div class="container">
         <div class="row header__grid">
-            <div class="col-md-5 col-xs-5 header__grid-block">
+            <div class="col-md-5 col-xs-4 header__grid-block">
                 <div class="header__phone">
                     <a class="header__phone-number" href="#">+7 (495) 729-20-84</a>
                     <a class="header__phone-icon" href="#"></a>
@@ -29,12 +29,15 @@
                     <span class="header__mob-burger-text">МЕНЮ</span>
                 </div>
             </div>
-            <div class="col-md-2 col-xs-2 header__grid-block">
+            <div class="col-md-2 col-xs-4 header__grid-block header__catalog"> <!--open-->
                 <div class="header__logo">
                     <a class="header__logo-link" href="#"></a>
                 </div>
+                <div class="header__catalog-block"> <!--noted-->
+                    <button class="header__catalog-btn">Закрыть фильтр <span>3</span></button>
+                </div>
             </div>
-            <div class="col-md-5 col-xs-5 header__grid-block">
+            <div class="col-md-5 col-xs-4 header__grid-block">
                 <div class="header__wrapper">
                     <div class="header__search">
                         <input type="text" placeholder="Поиск по сайту" class="input header__search-input">
@@ -101,7 +104,7 @@
                             <a href="#">Контакты</a>
                         </li>
                         <li class="header__mob-menu-item">
-                            <a href="#">SALE</a>
+                            <a class="colorGold" href="#">SALE</a>
                         </li>
                     </ul>
                 </div>
@@ -109,9 +112,9 @@
         </div>
     </div>
 </header>
-<main id="catalog-page" class="common catalog-page "> <!--catalog-page_filterNo, catalog-page_cardFourth-->
+<main id="catalog-page" class="common catalog-page catalog-page__mob-two"> <!--catalog-page_filterNo, catalog-page_cardFourth, catalog-page__mob-one-->
     <div class="container">
-        <div class="row mx-0">
+        <div class="row mx-0 catalog-page__wrapper">
             <div class="col-xs-12">
                 <div class="catalog-page__header">
                     <div id="filtration__header" class="filtration__header">
@@ -122,13 +125,13 @@
                         </div>
                     </div>
                     <h1 class="h1 catalog-page__title">КЛАССИЧЕСКИЕ КОВРЫ</h1>
-                    <div class="catalog-page__scale reduced"> <!--enlarged-->
+                    <div class="catalog-page__scale enlarged"> <!--enlarged, reduced-->
                         <span class="catalog-page__scale-reduce"></span>
                         <span class="catalog-page__scale-increase"></span>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-2 catalog-page__left-column">
+            <div class="col-md-2 col-sm-3 catalog-page__left-column">
                 <div class="filtration filtration_open">
                     <div class="marked-block-container">
                         <div class="marked-block">
@@ -370,8 +373,19 @@
                         </div>
                     </div>
                 </div>
+                <button class="gold-button filtration__btn-mobil">фильтр <span>1</span></button>
             </div>
-            <div class="col-sm-10 catalog-page__right-column">
+            <div class="col-md-10 col-sm-9 catalog-page__right-column">
+                <div class="catalog-page__switchGroup">
+                    <div id="catalog-page__switch-1" class="catalog-page__switch active">
+                        <i class="catalog-page__switch-icon"></i>
+                        <span class="catalog-page__switch-text">По два в ряд</span>
+                    </div>
+                    <div id="catalog-page__switch-2" class="catalog-page__switch">
+                        <i class="catalog-page__switch-icon"></i>
+                        <span class="catalog-page__switch-text">По одному в ряд</span>
+                    </div>
+                </div>
                 <div class="catalog-section">
                     <div class="catalog-list">
                         <div class="catalog-item">
@@ -775,6 +789,249 @@
         </div>
     </div>
 </main>
+<div class="mobil-filter">
+    <div class="filtration filtration_open">
+        <div class="marked-block-container">
+            <div class="marked-block">
+                <span>Традиционный</span>
+                <button></button>
+            </div>
+            <div class="marked-block">
+                <span>до 200 x 150 см</span>
+                <button></button>
+            </div>
+            <div class="marked-block">
+                <span>240 x 170 см</span>
+                <button></button>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-1">
+            <button class="accordion">По стилю <span class="mobil-filter__counter">1</span> <i></i></button>
+            <div class="panel">
+                <span class="accordion__text text-bold">Классические</span>
+                <div class="accordion__list">
+                    <label class="checkbox-block">Традиционный
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-block">Европейская классика
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-block">Ориентальный
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-block">Рустикальный
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <span class="accordion__text">Современные</span>
+                <span class="accordion__text">Дизайнерские</span>
+                <span class="accordion__text">Килимы и сумахи</span>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-2">
+            <button class="accordion">Размер <i></i></button>
+            <div class="panel">
+                <label class="checkbox-block">до 200 x 150 см
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">240 x 170 см
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">300 x 200 см
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">300 x 250 см
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">350 x 250 см
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">400 x 300 см
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">450 x 350 см
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">очень большие
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <div class="filtration__wrapper-2-footer">
+                    <button class="accordion accordion_nested">Указать свой размер <i></i></button>
+                    <div class="panel">
+                        <div class="accordion_nested-form">
+                            <span class="accordion_nested-text">Длина</span>
+                            <div class="accordion_nested-form-container">
+                                <span class="accordion_nested-text">от</span>
+                                <input class="accordion_nested-form-input" type="text">
+                                <span class="accordion_nested-text">до</span>
+                                <input class="accordion_nested-form-input" type="text">
+                                <span class="accordion_nested-text">см.</span>
+                            </div>
+                        </div>
+                        <div class="accordion_nested-form">
+                            <span class="accordion_nested-text">Ширина</span>
+                            <div class="accordion_nested-form-container">
+                                <span class="accordion_nested-text">от</span>
+                                <input class="accordion_nested-form-input" type="text">
+                                <span class="accordion_nested-text">до</span>
+                                <input class="accordion_nested-form-input" type="text">
+                                <span class="accordion_nested-text">см.</span>
+                            </div>
+                        </div>
+
+                        <button class="btn gold-button filtration__wrapper-btn">Применить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-3">
+            <button class="accordion">Форма <i></i></button>
+            <div class="panel">
+                <label class="checkbox-block">Круглые
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Прямоугольные
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Квадратные
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-4">
+            <button class="accordion">Материал <i></i></button>
+            <div class="panel">
+                <label class="checkbox-block">Шерстяные
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Шелковые
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Шерсть и шелк
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-5">
+            <button class="accordion">Узор <i></i></button>
+            <div class="panel">
+                <label class="checkbox-block">Абстракция
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Стертая классика
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Геометрия
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Цветы и растения
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Авангард
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-6">
+            <button class="accordion">Страна <i></i></button>
+            <div class="panel">
+                <label class="checkbox-block">Персидские
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Индийские
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Пакистанские
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Непальские
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Китайские
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Дагестанские
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Афганские
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Кавказские
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Турецкие
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Азербайджанские
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">Иранские
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filtration__wrapper filtration__wrapper-7">
+            <button class="accordion">Цена <i></i></button>
+            <div class="panel">
+                <label class="checkbox-block">до 100 000 ₽
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">от 100 000 до 350 000 ₽
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-block">от 350 000 ₽
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row mx-0 footer_nav">
@@ -995,7 +1252,7 @@
             this.classList.toggle("active");
             let panel = this.nextElementSibling;
             if (panel.style.display === "none") {
-                panel.style.display = "block";
+                panel.style.display = "flex";
             } else {
                 panel.style.display = "none";
             }
@@ -1006,8 +1263,44 @@
     let catalogPage = document.querySelector('#catalog-page');
     filterButtonClose.addEventListener('click', function () {
         catalogPage.classList.toggle("catalog-page_filterNo");
-    })
+    });
 
+
+
+    const container = document.querySelector('.catalog-page__switchGroup');
+
+
+    $('#catalog-page__switch-1').click(function () {
+        $('.catalog-page__switch').removeClass('active');
+        $(this).addClass('active');
+        $('#catalog-page').addClass('catalog-page__mob-two').removeClass('catalog-page__mob-one');
+    });
+
+    $('#catalog-page__switch-2').click(function () {
+        $('.catalog-page__switch').removeClass('active');
+        $(this).addClass('active');
+        $('#catalog-page').removeClass('catalog-page__mob-two').addClass('catalog-page__mob-one');
+    });
+
+    $('.filtration__btn-mobil').click(function () {
+        $('.mobil-filter').addClass('active');
+        $('.header__catalog').addClass('open')
+    });
+
+    $('.header__catalog-btn').click(function () {
+        $('.header__catalog').removeClass('open');
+        $('.mobil-filter').removeClass('active');
+    });
+
+    $('.catalog-page__scale-increase').click(function () {
+        $('.catalog-page__scale').removeClass('enlarged').addClass('reduced');
+        $('#catalog-page').addClass('catalog-page_cardFourth')
+    });
+
+    $('.catalog-page__scale-reduce').click(function () {
+        $('.catalog-page__scale').removeClass('reduced').addClass('enlarged');
+        $('#catalog-page').removeClass('catalog-page_cardFourth')
+    })
 </script>
 </body>
 </html>

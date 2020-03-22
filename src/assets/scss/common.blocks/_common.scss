@@ -6,6 +6,10 @@ html, body {
   font-weight: normal;
 }
 
+body {
+  position: relative;
+}
+
 .new-design2020 {
 
   .colorGold {
@@ -407,6 +411,10 @@ html, body {
       color: #BEA267;
       transition: 0.2s;
     }
+  }
+
+  .filtration__btn-mobil {
+    display: none;
   }
 }
 

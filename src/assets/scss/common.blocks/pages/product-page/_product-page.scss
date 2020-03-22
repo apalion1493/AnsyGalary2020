@@ -156,6 +156,13 @@
 
   &.gold-button-bg {
 
+    &:hover {
+      i {
+        background: url("../img/icon/border-like-icon-gold.svg") no-repeat center;
+        background-size: 100% auto;
+      }
+    }
+
     i {
       background: url("../img/icon/border-like-icon.svg") no-repeat center;
       background-size: 100% auto;

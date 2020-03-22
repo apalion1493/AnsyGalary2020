@@ -104,6 +104,7 @@
     line-height: 16px;
     letter-spacing: 0.05em;
     color: #333333;
+    white-space: nowrap;
   }
 
   .product-card__description-text {
@@ -247,6 +248,31 @@
     .product-card__description-price-current {
       margin-right: 6px;
       font-size: 12px;
+    }
+
+    .product-card.product-card_catalogVersion {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      .product-card__img img {
+        height: auto;
+        min-height: auto;
+      }
+    }
+
+    .product-card__discounts {
+      right: 10px;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .product-card__liked {
+      right: 10px;
+      bottom: 10px;
     }
   }
 }

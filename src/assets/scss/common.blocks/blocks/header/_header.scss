@@ -284,6 +284,10 @@
   .header__mob-menu {
     display: none;
   }
+  
+  .header__catalog-block {
+    display: none;
+  }
 
   @media (max-width: 992px) {
     #header.header {
@@ -433,7 +437,7 @@
 
     .header__mob-menu-tel {
       padding-bottom: 30px;
-      border-bottom: 1px solid #999999;
+      border-bottom: 1px solid rgba(153, 153, 153, .5);
 
       a {
         font-size: 15px;
@@ -447,13 +451,15 @@
     }
 
     .header__mob-menu-list {
-      margin-top: 34px;
+      margin-top: 18px;
       padding-left: 0;
       list-style-type: none;
     }
 
     .header__mob-menu-item {
-      margin-bottom: 43px;
+      margin-bottom: 13px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(205, 205, 205, .5);
 
       a {
         font-size: 14px;
@@ -478,6 +484,75 @@
         transition: 0.2s;
         margin-top: 10px !important;
       }
+    }
+
+
+    .header__catalog {
+
+      .header__catalog-btn {
+        max-width: 169px;
+        min-width: 169px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        border: 1px solid #222222;
+        border-radius: 2px;
+        color: #333333;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+
+        span {
+          display: none;
+          min-width: 20px;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          background: #BEA267;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-left: 10px;
+        }
+      }
+
+      .header__catalog-block {
+        &.noted {
+          .header__catalog-btn {
+            border: 1px solid #BEA267;
+            color: #BEA267;
+
+            span {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      &.open {
+        .header__logo {
+          display: none;
+        }
+
+        .header__catalog-block {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .header__catalog .header__catalog-btn {
+      min-width: 120px;
     }
   }
 }
