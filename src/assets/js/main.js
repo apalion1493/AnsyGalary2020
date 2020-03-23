@@ -32,14 +32,14 @@ $('.main-text__wrapper-mobil-btn').click(function () {
     $('.main-text__wrapper').toggleClass('active');
 });
 
-jQuery(function($){
-    $(document).mouseup(function (e){
-        let div = $(".header__mob-menu");
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
-            $('#header').removeClass('active');
-        }
-    });
-});
+// jQuery(function($){
+//     $(document).mouseup(function (e){
+//         let div = $(".header__mob-menu");
+//         if (!div.is(e.target) && div.has(e.target).length === 0) {
+//             $('#header').removeClass('active');
+//         }
+//     });
+// });
 
 let acc = document.getElementsByClassName("accordion");
 let i;
