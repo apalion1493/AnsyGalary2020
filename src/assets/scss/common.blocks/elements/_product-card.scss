@@ -17,8 +17,21 @@
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 5px;
+    white-space: nowrap;
+    position: relative;
+    padding-right: 3px;
 
-    a {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      box-shadow: inset -3px 0 5px -3px #ffffff
+    }
+
+  a {
       color: #333333;
 
       &:hover {

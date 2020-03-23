@@ -3,6 +3,7 @@
     background: #ffffff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     padding-top: 19px;
+    position: relative;
 
     &:before {
       display: none;
@@ -111,7 +112,7 @@
 
       &:hover {
         text-decoration: none;
-        color: #ec5149;
+        color: #BEA267;
       }
 
       i {

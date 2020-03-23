@@ -88,6 +88,10 @@
   margin-bottom: 12px;
   cursor: pointer;
 
+  &:hover {
+    color: #BEA267;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -147,6 +151,10 @@
   font-size: 14px;
   line-height: 17px;
   color: #555555;
+
+  &:hover {
+    color: #BEA267;
+  }
 }
 
 .filtration__header-block {

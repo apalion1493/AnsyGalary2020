@@ -9,6 +9,10 @@
   color: #333333;
   user-select: none;
 
+  &:hover {
+    color: #BEA267;
+  }
+
   input {
     position: absolute;
     opacity: 0;

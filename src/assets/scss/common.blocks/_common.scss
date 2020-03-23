@@ -12,6 +12,12 @@ body {
 
 .new-design2020 {
 
+  a {
+    &:hover {
+      color: #BEA267;
+    }
+  }
+
   .colorGold {
     color: #BEA267 !important;
   }
@@ -351,6 +357,11 @@ body {
   .multiple-items {
     padding: 0;
     margin-bottom: 51px;
+
+    .slick-track {
+      display: flex;
+      align-items: flex-end;
+    }
 
     .slick-next, .slick-prev {
       top: 49%;
