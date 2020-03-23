@@ -201,7 +201,7 @@
 
   @media (max-width: 767.98px) {
     .first-screen-home {
-      padding-bottom: 6px;
+      padding-bottom: 2px;
 
       h1.h1 {
         margin-bottom: 13px;
@@ -332,7 +332,7 @@
 
       .list-mini-categories figure:hover picture,
       .list-mini-categories figure picture {
-        background-size: cover;
+        background-size: 110% 110%;
       }
 
     }
