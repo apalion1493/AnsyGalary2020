@@ -15,7 +15,7 @@
 <header id="header" class="header">
     <div class="container">
         <div class="row header__grid">
-            <div class="col-md-5 col-xs-5 header__grid-block">
+            <div class="col-md-5 col-xs-4 header__grid-block">
                 <div class="header__phone">
                     <a class="header__phone-number" href="#">+7 (495) 729-20-84</a>
                     <a class="header__phone-icon" href="#"></a>
@@ -29,12 +29,15 @@
                     <span class="header__mob-burger-text">МЕНЮ</span>
                 </div>
             </div>
-            <div class="col-md-2 col-xs-2 header__grid-block">
+            <div class="col-md-2 col-xs-4 header__grid-block header__catalog"> <!--open-->
                 <div class="header__logo">
                     <a class="header__logo-link" href="#"></a>
                 </div>
+                <div class="header__catalog-block"> <!--noted-->
+                    <button class="header__catalog-btn">Закрыть фильтр <span>3</span></button>
+                </div>
             </div>
-            <div class="col-md-5 col-xs-5 header__grid-block">
+            <div class="col-md-5 col-xs-4 header__grid-block">
                 <div class="header__wrapper">
                     <div class="header__search">
                         <input type="text" placeholder="Поиск по сайту" class="input header__search-input">
@@ -101,7 +104,7 @@
                             <a href="#">Контакты</a>
                         </li>
                         <li class="header__mob-menu-item">
-                            <a href="#">SALE</a>
+                            <a class="colorGold" href="#">SALE</a>
                         </li>
                     </ul>
                 </div>
@@ -426,108 +429,6 @@
 <script src="assets/js/libs.min.js"></script>
 <script>
     alert = function() {};
-
-    function testFunc() {
-        $('.header__search').addClass('active');
-    }
-
-    jQuery(function($){
-        $(document).mouseup(function (e){
-            let div = $(".header__search");
-            if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $(div).removeClass('active');
-            }
-        });
-    });
-
-    $('.header__search-icon').click(function () {
-        $('#header').addClass('openSearch');
-    });
-
-    jQuery(function($){
-        $(document).mouseup(function (e){
-            let div = $(".header__mob-search-container");
-            if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $('#header').removeClass('openSearch');
-            }
-        });
-    });
-
-    jQuery(function($){
-        $(document).mouseup(function (e){
-            let div = $(".header__mob-menu");
-            if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $('#header').removeClass('active');
-            }
-        });
-    });
-
-    $('#header__mob-burger').click(function () {
-        $('#header').toggleClass('active');
-    });
-
-
-
-
-
-
-
-
-
-
-    $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    variableWidth: true,
-                    arrows: false,
-                    centerPadding: '20px',
-                    centerMode: true,
-                }
-            }
-        ]
-    });
-
-    $('.design-category-slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    variableWidth: true,
-                    arrows: false,
-                    centerPadding: '20px',
-                    centerMode: true,
-                }
-            }
-        ]
-    });
 </script>
 </body>
 </html>

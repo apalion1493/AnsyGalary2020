@@ -29,9 +29,12 @@
                     <span class="header__mob-burger-text">МЕНЮ</span>
                 </div>
             </div>
-            <div class="col-md-2 col-xs-4 header__grid-block">
+            <div class="col-md-2 col-xs-4 header__grid-block header__catalog"> <!--open-->
                 <div class="header__logo">
                     <a class="header__logo-link" href="#"></a>
+                </div>
+                <div class="header__catalog-block"> <!--noted-->
+                    <button class="header__catalog-btn">Закрыть фильтр <span>3</span></button>
                 </div>
             </div>
             <div class="col-md-5 col-xs-4 header__grid-block">
@@ -811,49 +814,6 @@
 <script src="assets/js/libs.min.js"></script>
 <script>
     alert = function() {};
-
-    function testFunc() {
-        $('.header__search').addClass('active');
-    }
-
-    jQuery(function($){
-        $(document).mouseup(function (e){
-            let div = $(".header__search");
-            if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $(div).removeClass('active');
-            }
-        });
-    });
-
-    $('.header__search-icon').click(function () {
-        $('#header').addClass('openSearch');
-    });
-
-    jQuery(function($){
-        $(document).mouseup(function (e){
-            let div = $(".header__mob-search-container");
-            if (!div.is(e.target) && div.has(e.target).length === 0) {
-                $('#header').removeClass('openSearch');
-            }
-        });
-    });
-
-
-    $('#header__mob-burger').click(function () {
-        $('#header').toggleClass('active');
-    });
-
-    $('.main-text__wrapper-mobil-btn').click(function () {
-        $('.main-text__wrapper').toggleClass('active');
-    });
-
-
-
-
-
-
-
-
 
     $('.multiple-items').slick({
         infinite: true,
