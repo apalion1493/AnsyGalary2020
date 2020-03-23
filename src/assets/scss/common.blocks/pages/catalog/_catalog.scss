@@ -63,13 +63,13 @@
   }
 
   .catalog-page__scale.reduced {
-    .catalog-page__scale-increase {
+    .catalog-page__scale-reduce {
       opacity: .5;
     }
   }
 
   .catalog-page__scale.enlarged {
-    .catalog-page__scale-reduce {
+    .catalog-page__scale-increase {
       opacity: .5;
     }
   }
