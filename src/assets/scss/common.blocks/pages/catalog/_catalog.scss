@@ -13,7 +13,8 @@
 
 .catalog-item {
   width: 33%;
-  max-width: 400px;
+  max-width: 455px;
+  align-self: flex-end;
 }
 
 .catalog-page {
@@ -153,6 +154,22 @@
 
 .catalog-page__switchGroup {
   display: none;
+}
+
+.catalog-page_filterNo {
+  .catalog-item {
+    .product-card_catalogVersion .product-card__img img {
+      min-height: 580px;
+    }
+  }
+}
+
+.catalog-page_filterNo.catalog-page_cardFourth {
+  .catalog-item {
+    .product-card_catalogVersion .product-card__img img {
+     min-height: 501px !important;
+    }
+  }
 }
 
 @media (max-width: 1440px) {
