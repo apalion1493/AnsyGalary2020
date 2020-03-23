@@ -21,15 +21,35 @@
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
       }
 
-      figure>picture,
-      figure:hover>picture {
+      figure>picture{
         background-size: 100% 100%;
         min-height: 462px;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          background: rgba(190, 162, 103, .5);
+          transition: 0.5s;
+        }
       }
 
       figure:hover>picture {
         filter: none;
         background-size: 110% 110%;
+        min-height: 462px;
+
+        &:before {
+          opacity: 1;
+          transition: 0.5s;
+        }
       }
 
       figure>figcaption.caption {
@@ -43,7 +63,7 @@
         bottom: 0;
         height: auto;
         box-shadow: none;
-        background: rgba(190, 162, 103, .5);
+        //background: rgba(190, 162, 103, .5);
         padding-top: 47%;
 
         .h3, h3 {
@@ -109,15 +129,14 @@
           figcaption {
             top: 0;
             box-shadow: none;
-            //background: rgba(190, 162, 103, .5);
           }
 
           picture {
             background-size: 110% 110%;
-            transition: .3s;
+            transition: .4s;
             &:before {
               opacity: 1;
-              transition: 0.3s;
+              transition: 0.5s;
             }
           }
 
@@ -138,7 +157,7 @@
         display: block;
         background-position: center;
         background-repeat: no-repeat;
-        transition: .3s;
+        transition: .4s;
 
         &:before {
           content: '';
@@ -150,7 +169,7 @@
           width: 100%;
           height: 100%;
           background: rgba(190, 162, 103, .5);
-          transition: .3s;
+          transition: .5s;
           opacity: 0;
         }
       }
