@@ -51,12 +51,20 @@
   }
 
   .selections-lists__item {
-    font-size: 14px;
-    line-height: 17px;
-    color: #575757;
     position: relative;
     margin-bottom: 18px;
     width: 180px;
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      color: #575757;
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
 
     &:before {
       content: '';
