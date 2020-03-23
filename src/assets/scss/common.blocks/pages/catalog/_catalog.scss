@@ -235,13 +235,15 @@
     .catalog-page__title {
       margin-left: auto;
       margin-right: auto;
+      font-size: 20px;
+      letter-spacing: 0.05em;
     }
 
     .catalog-page__switchGroup {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       margin-top: 8px;
     }
 
