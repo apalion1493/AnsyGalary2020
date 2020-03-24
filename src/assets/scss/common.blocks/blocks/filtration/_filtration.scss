@@ -141,7 +141,7 @@
 }
 
 .marked-block-container {
-  margin-bottom: 7px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -189,7 +189,6 @@
 .filtration__wrapper-2 {
   .panel {
     margin-top: 5px;
-    margin-bottom: 12px;
   }
 
   .checkbox-block {
@@ -221,19 +220,11 @@
   .checkbox-block {
     padding-left: 27px;
   }
-
-  .panel {
-    margin-bottom: 17px;
-  }
 }
 
 .filtration__wrapper-4 {
   .checkbox-block {
     padding-left: 27px;
-  }
-
-  .panel {
-    margin-bottom: 29px;
   }
 }
 
@@ -241,19 +232,11 @@
   .checkbox-block {
     padding-left: 27px;
   }
-
-  .panel {
-    margin-bottom: 29px;
-  }
 }
 
 .filtration__wrapper-6 {
   .checkbox-block {
     padding-left: 27px;
-  }
-
-  .panel {
-    margin-bottom: 41px;
   }
 
 }
@@ -265,6 +248,17 @@
 
   .checkbox-block {
     padding-left: 27px;
+  }
+}
+
+.filtration__wrapper {
+  & > .panel {
+    margin-bottom: 32px;
+  }
+
+  & > .accordion {
+    padding-top: 0;
+    padding-bottom: 15px;
   }
 }
 
