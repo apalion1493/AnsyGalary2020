@@ -127,9 +127,10 @@
   }
 
   .catalog-page__button {
-    width: 170px;
+    width: 100%;
+    max-width: 175px;
     position: relative;
-    left: -16px;
+    //left: -16px;
     height: 44px;
   }
 

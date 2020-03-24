@@ -33,6 +33,11 @@ function styles() {
         .pipe(browserSync.stream());
 }
 
+function css() {
+    return gulp.src('src/assets/scss/past-styles/oldStyle.min.css')
+        .pipe(gulp.dest('build/assets/css'))
+}
+
 function scripts() {
 
     return gulp.src([
@@ -92,6 +97,7 @@ function watch() {
     });
 
     gulp.watch('src/assets/scss/**/*.scss', styles)
+    gulp.watch('src/assets/scss/past-styles/*.css', css)
     gulp.watch('src/assets/js/**/*.js', scripts)
     gulp.watch('src/*.html', html)
     gulp.watch('src/assets/img/**/*.*', img)
@@ -102,6 +108,7 @@ function watch() {
 }
 
 gulp.task('styles', styles);
+gulp.task('css', css);
 gulp.task('scripts', scripts);
 gulp.task('html', html);
 gulp.task('img', img);
@@ -110,5 +117,5 @@ gulp.task('og', og);
 gulp.task('og', favicons);
 gulp.task('del', clean);
 gulp.task('watch', watch);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles,scripts,html,img,fonts,og,favicons)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles,css,scripts,html,img,fonts,og,favicons)));
 gulp.task('dev', gulp.series('build','watch'));
