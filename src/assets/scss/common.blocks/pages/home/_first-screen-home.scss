@@ -14,7 +14,6 @@
     .list-of-categories {
 
       .thumbnail {
-        //max-width: 368px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -39,9 +38,8 @@
 
       figure>picture{
         background-size: cover;
-        //min-height: 462px;
-        //height: 600px;
         position: relative;
+        min-height: 581px;
 
         &:before {
           content: '';
@@ -192,7 +190,7 @@
       picture {
         position: relative;
         background-size: cover;
-        min-height: 172px;
+        min-height: 222px;
         display: block;
         background-position: center;
         background-repeat: no-repeat;
@@ -261,26 +259,50 @@
     }
   }
 
-  @media (min-width: 1500px) {
+  @media (max-width: 1440px) {
     .first-screen-home {
       .list-of-categories figure>picture {
-        min-height: 580px;
+        min-height: 556px;
       }
 
       .list-mini-categories figure>picture {
-        min-height: 240px;
+        min-height: 213px;
       }
     }
   }
 
-  @media (max-width: 1499.98px) {
+  @media (max-width: 1366px) {
     .first-screen-home {
       .list-of-categories figure>picture {
-        min-height: 500px;
+        min-height: 525px;
       }
 
       .list-mini-categories figure>picture {
-        min-height: 180px;
+        min-height: 201px;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .first-screen-home {
+      .list-of-categories figure>picture {
+        min-height: 488px;
+      }
+
+      .list-mini-categories figure>picture {
+        min-height: 187px;
+      }
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .first-screen-home {
+      .list-of-categories figure>picture {
+        min-height: 433px;
+      }
+
+      .list-mini-categories figure>picture {
+        min-height: 166px;
       }
     }
   }
@@ -292,12 +314,33 @@
         figure:hover>picture {
           background-size: cover;
           background-position: center bottom;
-          min-height: 400px;
         }
 
         .btn-outline {
           display: inline-block;
         }
+      }
+    }
+
+    .first-screen-home {
+      .list-of-categories figure>picture {
+        min-height: 381px;
+      }
+
+      .list-mini-categories figure>picture {
+        min-height: 174px;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .first-screen-home {
+      .list-of-categories figure>picture {
+        min-height: 301px;
+      }
+
+      .list-mini-categories figure>picture {
+        min-height: 114px;
       }
     }
   }
