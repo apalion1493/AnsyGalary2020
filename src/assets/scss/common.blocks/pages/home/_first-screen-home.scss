@@ -45,7 +45,7 @@
 
       figure:hover>picture {
         filter: none;
-        background-size: 110% 110%;
+        background-size: cover;
         min-height: 462px;
 
         &:before {
