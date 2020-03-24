@@ -23,8 +23,9 @@
       }
 
       figure>picture{
-        background-size: 100% 100%;
-        min-height: 462px;
+        background-size: cover;
+        //min-height: 462px;
+        //height: 600px;
         position: relative;
 
         &:before {

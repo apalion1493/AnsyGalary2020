@@ -84,6 +84,24 @@
     align-items: flex-end;
   }
 
+  .product-card__description-text-size {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #222222;
+  }
+
+  .product-card__description-noPrice-text {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #777777;
+    display: block;
+    margin-top: 5px;
+  }
+
   .product-card__description-price-old {
     font-size: 11px;
     line-height: 13px;
