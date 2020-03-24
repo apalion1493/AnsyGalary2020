@@ -22,6 +22,21 @@
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
       }
 
+      .thumbnail_first {
+        margin-left: 0;
+        margin-right: 7px;
+      }
+
+      .thumbnail_second {
+        margin-left: 7px;
+        margin-right: 7px;
+      }
+
+      .thumbnail_third {
+        margin-left: 7px;
+        margin-right: 0;
+      }
+
       figure>picture{
         background-size: cover;
         //min-height: 462px;
@@ -140,7 +155,7 @@
           }
 
           picture {
-            background-size: 110% 110%;
+            background-size: cover;
             transition: .4s;
             &:before {
               opacity: 1;
@@ -158,9 +173,25 @@
         }
       }
 
+      .list-mini-categories__figure-1 {
+        margin-left: 0;
+        margin-right: 7px;
+      }
+
+      .list-mini-categories__figure-2,
+      .list-mini-categories__figure-3 {
+        margin-left: 7px;
+        margin-right: 7px;
+      }
+
+      .list-mini-categories__figure-4 {
+        margin-left: 7px;
+        margin-right: 0;
+      }
+
       picture {
         position: relative;
-        background-size: 103% 103%;
+        background-size: cover;
         min-height: 172px;
         display: block;
         background-position: center;
@@ -230,6 +261,30 @@
     }
   }
 
+  @media (min-width: 1500px) {
+    .first-screen-home {
+      .list-of-categories figure>picture {
+        min-height: 580px;
+      }
+
+      .list-mini-categories figure>picture {
+        min-height: 240px;
+      }
+    }
+  }
+
+  @media (max-width: 1499.98px) {
+    .first-screen-home {
+      .list-of-categories figure>picture {
+        min-height: 500px;
+      }
+
+      .list-mini-categories figure>picture {
+        min-height: 180px;
+      }
+    }
+  }
+
   @media (max-width: 991.98px) {
     .first-screen-home {
       .list-of-categories {
@@ -237,6 +292,7 @@
         figure:hover>picture {
           background-size: cover;
           background-position: center bottom;
+          min-height: 400px;
         }
 
         .btn-outline {
@@ -271,6 +327,8 @@
         .thumbnail {
           max-width: 100%;
           height: 164px;
+          margin-left: 0;
+          margin-right: 0;
         }
 
         figure>figcaption.caption {
@@ -347,6 +405,8 @@
 
         figure {
           max-width: 100%;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
         }
 
         .btn-outline {
