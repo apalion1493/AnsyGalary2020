@@ -8,14 +8,12 @@
   }
 
   .product-card_homePage {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 20px;
+    margin: 10px 5px 31px;
+    padding: 10px 16px 20px;
+
 
     &:hover {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
       transition: 0.2s;
     }
   }
