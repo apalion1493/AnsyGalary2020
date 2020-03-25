@@ -246,7 +246,17 @@
     //}
 
     .product-card_catalogVersion .product-card__img img {
-      min-height: 400px;
+      min-height: 330px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .product-card_catalogVersion .product-card__img img {
+      min-height: 308px;
+    }
+
+    .catalog-page_cardFourth .catalog-item .product-card_catalogVersion .product-card__img img {
+
     }
   }
 
