@@ -32,30 +32,7 @@ $('.main-text__wrapper-mobil-btn').click(function () {
     $('.main-text__wrapper').toggleClass('active');
 });
 
-var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.display === "none") {
-            panel.style.display = "flex";
-        } else {
-            panel.style.display = "none";
-        }
-    });
-}
-
-var filterButtonClose = document.querySelector('#filtration__header');
-var catalogPage = document.querySelector('#catalog-page');
-filterButtonClose.addEventListener('click', function () {
-    catalogPage.classList.toggle("catalog-page_filterNo");
-});
-
-
-
-var container = document.querySelector('.catalog-page__switchGroup');
 
 
 $('#catalog-page__switch-1').click(function () {
@@ -89,3 +66,53 @@ $('.catalog-page__scale-increase').click(function () {
     $('.catalog-page__scale').removeClass('reduced').addClass('enlarged');
     $('#catalog-page').removeClass('catalog-page_cardFourth')
 });
+
+var header = $('#header'),
+    scrollPrev = 0;
+
+$(window).scroll(function() {
+    var scrolled = $(window).scrollTop();
+
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+        header.addClass('out');
+    } else {
+        header.removeClass('out');
+    }
+    scrollPrev = scrolled;
+});
+
+
+
+
+
+
+
+
+
+
+////////
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "none") {
+            panel.style.display = "flex";
+        } else {
+            panel.style.display = "none";
+        }
+    });
+}
+
+var filterButtonClose = document.querySelector('#filtration__header');
+var catalogPage = document.querySelector('#catalog-page');
+filterButtonClose.addEventListener('click', function () {
+    catalogPage.classList.toggle("catalog-page_filterNo");
+});
+
+
+
+var container = document.querySelector('.catalog-page__switchGroup');

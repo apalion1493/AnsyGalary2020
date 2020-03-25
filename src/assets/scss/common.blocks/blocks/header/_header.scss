@@ -307,6 +307,12 @@
       height: 70px;
       position: fixed;
       padding-bottom: 21px;
+      transition: 0.3s;
+    }
+
+    .header.out {
+      transition: 0.3s;
+      transform: translateY(-100%);
     }
 
     .header__mob-burger {
