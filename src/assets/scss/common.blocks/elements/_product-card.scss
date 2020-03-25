@@ -4,6 +4,20 @@
     max-width: 100%;
     margin-left: 21px;
     margin-right: 21px;
+    transition: 0.2s;
+  }
+
+  .product-card_homePage {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      transition: 0.2s;
+    }
   }
 
   .product-card__description {

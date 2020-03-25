@@ -146,6 +146,10 @@
     display: flex;
     align-items: center;
     margin-left: 2px;
+
+    a:nth-child(2) {
+      margin-left: 4px;
+    }
   }
 
   .footer__form {

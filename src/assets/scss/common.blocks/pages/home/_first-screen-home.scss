@@ -489,7 +489,10 @@
       .list-mini-categories figure picture {
         background-size: 110% 110%;
       }
+    }
 
+    .first-screen-home .list-mini-categories figure>picture {
+      min-height: 164px;
     }
   }
 }
