@@ -364,6 +364,26 @@
         max-width: 100%;
         padding-right: 42px;
         padding-left: 42px;
+        margin-bottom: 30px;
+      }
+
+      .product-card_catalogVersion {
+        .product-card__description-mobil {
+          display: none;
+        }
+
+        .product-card__description-desktop {
+          display: flex;
+        }
+
+        .product-card__description-price {
+          align-items: flex-end;
+          flex-direction: column;
+        }
+
+        .product-card__description-title {
+          margin-bottom: 0;
+        }
       }
     }
 

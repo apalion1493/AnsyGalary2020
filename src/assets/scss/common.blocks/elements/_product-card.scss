@@ -321,6 +321,17 @@
         height: auto;
         min-height: auto;
       }
+
+      .product-card__description-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .product-card__description-price {
+        p, span {
+          font-size: 10px;
+        }
+      }
     }
 
     .product-card__discounts {

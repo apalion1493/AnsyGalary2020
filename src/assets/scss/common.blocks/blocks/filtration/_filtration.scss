@@ -305,4 +305,18 @@
       margin-left: 10px;
     }
   }
+
+  .mobil-filter.active {
+    .panel {
+      margin-bottom: 22px;
+    }
+
+    .filtration__wrapper {
+      padding-top: 22px;
+    }
+
+    .filtration__wrapper-2-footer .panel {
+      margin-bottom: 0;
+    }
+  }
 }
