@@ -246,8 +246,8 @@
                     </div>
 
                     <div class="filtration__wrapper filtration__wrapper-3">
-                        <button class="accordion">Форма <i></i></button>
-                        <div class="panel">
+                        <button class="accordion active">Форма <i></i></button>
+                        <div class="panel" style="display: none;">
                             <label class="checkbox-block">Круглые
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
@@ -264,8 +264,8 @@
                     </div>
 
                     <div class="filtration__wrapper filtration__wrapper-4">
-                        <button class="accordion">Материал <i></i></button>
-                        <div class="panel">
+                        <button class="accordion active">Материал <i></i></button>
+                        <div class="panel" style="display: none;">
                             <label class="checkbox-block">Шерстяные
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
@@ -282,8 +282,8 @@
                     </div>
 
                     <div class="filtration__wrapper filtration__wrapper-5">
-                        <button class="accordion">Узор <i></i></button>
-                        <div class="panel">
+                        <button class="accordion active">Узор <i></i></button>
+                        <div class="panel" style="display: none;">
                             <label class="checkbox-block">Абстракция
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
@@ -308,8 +308,8 @@
                     </div>
 
                     <div class="filtration__wrapper filtration__wrapper-6">
-                        <button class="accordion">Страна <i></i></button>
-                        <div class="panel">
+                        <button class="accordion active">Страна <i></i></button>
+                        <div class="panel" style="display: none;">
                             <label class="checkbox-block">Персидские
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
@@ -358,8 +358,8 @@
                     </div>
 
                     <div class="filtration__wrapper filtration__wrapper-7">
-                        <button class="accordion">Цена <i></i></button>
-                        <div class="panel">
+                        <button class="accordion active">Цена <i></i></button>
+                        <div class="panel" style="display: none;">
                             <label class="checkbox-block">до 100 000 ₽
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
@@ -679,7 +679,7 @@
                                 <li data-pagenr="3" class="">
                                     <a href="#!page:3" class="page">3</a>
                                 </li>
-                                <li data-pagenr="4" class="">
+                                <li data-pagenr="4" class="hidden">
                                     <a href="#!page:4" class="page">4</a>
                                 </li>
                                 <li data-pagenr="5" class="hidden">
@@ -778,37 +778,38 @@
                                         <span class="caret"></span>
                                     </span>
                                     <ul class="dropdown-menu">
-                                    <li><a class="dropdownPage">5</a></li>
-                                    <li><a class="dropdownPage">6</a></li>
-                                    <li><a class="dropdownPage">7</a></li>
-                                    <li><a class="dropdownPage">8</a></li>
-                                    <li><a class="dropdownPage">9</a></li>
-                                    <li><a class="dropdownPage">10</a></li>
-                                    <li><a class="dropdownPage">11</a></li>
-                                    <li><a class="dropdownPage">12</a></li>
-                                    <li><a class="dropdownPage">13</a></li>
-                                    <li><a class="dropdownPage">14</a></li>
-                                    <li><a class="dropdownPage">15</a></li>
-                                    <li><a class="dropdownPage">16</a></li>
-                                    <li><a class="dropdownPage">17</a></li>
-                                    <li><a class="dropdownPage">18</a></li>
-                                    <li><a class="dropdownPage">19</a></li>
-                                    <li><a class="dropdownPage">20</a></li>
-                                    <li><a class="dropdownPage">21</a></li>
-                                    <li><a class="dropdownPage">22</a></li>
-                                    <li><a class="dropdownPage">23</a></li>
-                                    <li><a class="dropdownPage">24</a></li>
-                                    <li><a class="dropdownPage">25</a></li>
-                                    <li><a class="dropdownPage">26</a></li>
-                                    <li><a class="dropdownPage">27</a></li>
-                                    <li><a class="dropdownPage">28</a></li>
-                                    <li><a class="dropdownPage">29</a></li>
-                                    <li><a class="dropdownPage">30</a></li>
-                                    <li><a class="dropdownPage">31</a></li>
-                                    <li><a class="dropdownPage">32</a></li>
-                                    <li><a class="dropdownPage">33</a></li>
-                                    <li><a class="dropdownPage">34</a></li>
-                                </ul>
+                                        <li><a class="dropdownPage">4</a></li>
+                                        <li><a class="dropdownPage">5</a></li>
+                                        <li><a class="dropdownPage">6</a></li>
+                                        <li><a class="dropdownPage">7</a></li>
+                                        <li><a class="dropdownPage">8</a></li>
+                                        <li><a class="dropdownPage">9</a></li>
+                                        <li><a class="dropdownPage">10</a></li>
+                                        <li><a class="dropdownPage">11</a></li>
+                                        <li><a class="dropdownPage">12</a></li>
+                                        <li><a class="dropdownPage">13</a></li>
+                                        <li><a class="dropdownPage">14</a></li>
+                                        <li><a class="dropdownPage">15</a></li>
+                                        <li><a class="dropdownPage">16</a></li>
+                                        <li><a class="dropdownPage">17</a></li>
+                                        <li><a class="dropdownPage">18</a></li>
+                                        <li><a class="dropdownPage">19</a></li>
+                                        <li><a class="dropdownPage">20</a></li>
+                                        <li><a class="dropdownPage">21</a></li>
+                                        <li><a class="dropdownPage">22</a></li>
+                                        <li><a class="dropdownPage">23</a></li>
+                                        <li><a class="dropdownPage">24</a></li>
+                                        <li><a class="dropdownPage">25</a></li>
+                                        <li><a class="dropdownPage">26</a></li>
+                                        <li><a class="dropdownPage">27</a></li>
+                                        <li><a class="dropdownPage">28</a></li>
+                                        <li><a class="dropdownPage">29</a></li>
+                                        <li><a class="dropdownPage">30</a></li>
+                                        <li><a class="dropdownPage">31</a></li>
+                                        <li><a class="dropdownPage">32</a></li>
+                                        <li><a class="dropdownPage">33</a></li>
+                                        <li><a class="dropdownPage">34</a></li>
+                                    </ul>
                                 </span>
                                 </li>
                                 <li data-pagenr="35" class="">

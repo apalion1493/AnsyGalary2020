@@ -49,6 +49,10 @@
       width: 17px;
       height: 16px;
       cursor: pointer;
+
+      &:hover {
+        opacity: 1 !important;
+      }
     }
   }
 
@@ -126,12 +130,13 @@
     margin-top: 9px;
   }
 
-  .catalog-page__button {
+  .gold-button.catalog-page__button {
     width: 100%;
-    max-width: 175px;
     position: relative;
     //left: -16px;
     height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .catalog-page_cardFourth {

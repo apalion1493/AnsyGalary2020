@@ -27,6 +27,7 @@
   }
 
   &.active {
+    color: #222222;
     i {
       transform: rotate(180deg);
       transition: 0.2s;
@@ -208,6 +209,8 @@
     margin-top: 11px;
     max-width: 180px;
     height: 43px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
 }

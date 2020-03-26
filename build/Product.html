@@ -119,8 +119,22 @@
         <div class="container">
             <div class="row mx-0">
                 <div class="col-md-8">
-                    <div>
-                        <img class="w-100" src="assets/img/test-img.png" alt="">
+                    <div class="product-page__example">
+                        <img class="w-100 product-page__example-dp" src="assets/img/test-img.png" alt="">
+                        <div class="product-page-mob__list">
+                            <div class="product-page-mob__item">
+                                <img class="w-100" src="assets/img/test-img.png" alt="">
+                            </div>
+                            <div class="product-page-mob__item">
+                                <img class="w-100" src="assets/img/test-img.png" alt="">
+                            </div>
+                            <div class="product-page-mob__item">
+                                <img class="w-100" src="assets/img/test-img.png" alt="">
+                            </div>
+                            <div class="product-page-mob__item">
+                                <img class="w-100" src="assets/img/test-img.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -431,6 +445,11 @@
 <script src="assets/js/libs.min.js"></script>
 <script>
     alert = function() {};
+
+    $('.product-page-mob__list').slick({
+        dots: true,
+        arrows: true
+    });
 </script>
 </body>
 </html>
