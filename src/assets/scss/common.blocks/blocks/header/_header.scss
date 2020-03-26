@@ -7,7 +7,6 @@
     width: 100%;
     height: 146px;
     z-index: 1000;
-    transition: height 0.2s;
 
     &:before {
       display: none;
@@ -306,31 +305,6 @@
     display: none;
   }
 
-  @media (min-width: 992px) {
-    #header.header {
-      position: fixed;
-      min-height: auto;
-
-      &.out {
-        height: 79px;
-        transition: height 0.2s;
-
-        .header__nav-container {
-          transform: translateY(-100%);
-          transition: 0.2s;
-          z-index: -1;
-          opacity: 0;
-        }
-
-        .header__logo-link {
-          width: 110px;
-          height: 40px;
-          transition: 0.2s;
-        }
-      }
-    }
-  }
-
   @media (max-width: 991.98px) {
     #header.header {
       height: 70px;
@@ -608,6 +582,77 @@
   @media (max-width: 360px) {
     .header__catalog .header__catalog-btn {
       min-width: 120px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .catalog-body.new-design2020 {
+
+    #header.header {
+      position: fixed;
+      min-height: auto;
+      height: 51px;
+      transition: transform 0.2s;
+      padding-top: 10px;
+      
+      .header__logo-link {
+        display: none;
+      }
+
+      .header__nav-container {
+        transform: translateY(-130%);
+        max-width: 529px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .header__grid {
+        border-bottom: none;
+      }
+
+      .header__list {
+        margin-top: 0;
+      }
+
+      .header__nav {
+        max-width: 529px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .header__search {
+        position: relative;
+        z-index: 1;
+
+        input {
+          padding-left: 0;
+        }
+
+        &.active {
+          input {
+            padding-left: 20px;
+          }
+        }
+      }
+
+      &.out {
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+      }
+    }
+
+  }
+
+  @media (max-width: 1080px) {
+    .catalog-body.new-design2020 {
+
+      #header.header {
+        .header__item {
+          margin-right: 30px;
+        }
+      }
+
     }
   }
 }

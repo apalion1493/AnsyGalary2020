@@ -10,10 +10,6 @@ body {
   position: relative;
 }
 
-main {
-  padding-top: 146px;
-}
-
 .new-design2020 {
 
   a {
@@ -438,6 +434,14 @@ main {
     .container {
       padding-left: 30px;
       padding-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  body.new-design2020 {
+    main {
+      padding-top: 146px;
     }
   }
 }
