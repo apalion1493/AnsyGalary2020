@@ -137,6 +137,15 @@
         margin-right: 16px;
       }
     }
+
+    &.active {
+      a {
+        i {
+          background: url("../img/icon/like-icon-colorBroun.svg") no-repeat center;
+          background-size: 100% auto;
+        }
+      }
+    }
   }
 
   .header__search-icon {
