@@ -58,6 +58,8 @@
     .header__search-btn {
       padding-left: 10px;
       padding-right: 13px;
+      position: relative;
+      z-index: 2;
 
       &:hover, &:active, &:focus {
         box-shadow: none;
