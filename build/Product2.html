@@ -13,7 +13,7 @@
 </head>
 <body class="new-design2020">
 
-<header id="header" class="header">
+<header id="header" class="header noFilter"> <!--hasFilter-->
     <div class="container">
         <div class="row header__grid">
             <div class="col-md-5 col-xs-4 header__grid-block">
@@ -34,17 +34,19 @@
                 <div class="header__logo">
                     <a class="header__logo-link" href="#"></a>
                 </div>
-                <div class="header__catalog-block"> <!--noted-->
-                    <button class="header__catalog-btn">Закрыть фильтр <span>3</span></button>
+                <div class="header__catalog-block noted"> <!--noted-->
+                    <button class="header__catalog-btn header__catalog-btn-close">Закрыть фильтр <span>3</span></button>
+                    <a href="#mobil-filter" class="header__catalog-btn header__catalog-btn-filter">Фильтр <span>3</span></a>
                 </div>
             </div>
             <div class="col-md-5 col-xs-4 header__grid-block">
                 <div class="header__wrapper">
                     <div class="header__search">
                         <input type="text" placeholder="Номер ковра" class="input header__search-input">
-                        <div onclick="testFunc()" class="btn header__search-btn">
+                        <div class="btn header__search-btn">
                             <i class="fa fa-search header__search-icon" aria-hidden="true"></i>
                         </div>
+                        <span class="header__search-bg"></span>
                     </div>
                     <div class="header__selected">
                         <a href="#">
