@@ -13,7 +13,7 @@
 </head>
 <body class="new-design2020 catalog-body">
 
-<header id="header" class="header">
+<header id="header" class="header noFilter"> <!--hasFilter-->
     <div class="container">
         <div class="row header__grid">
             <div class="col-md-5 col-xs-4 header__grid-block">
@@ -34,8 +34,9 @@
                 <div class="header__logo">
                     <a class="header__logo-link" href="#"></a>
                 </div>
-                <div class="header__catalog-block"> <!--noted-->
-                    <button class="header__catalog-btn">Закрыть фильтр <span>3</span></button>
+                <div class="header__catalog-block noted"> <!--noted-->
+                    <button class="header__catalog-btn header__catalog-btn-close">Закрыть фильтр <span>3</span></button>
+                    <a href="#mobil-filter" class="header__catalog-btn header__catalog-btn-filter">Фильтр <span>3</span></a>
                 </div>
             </div>
             <div class="col-md-5 col-xs-4 header__grid-block">
@@ -221,21 +222,21 @@
                                     <div class="accordion_nested-form">
                                         <span class="accordion_nested-text">Длина</span>
                                         <div class="accordion_nested-form-container">
-                                            <span class="accordion_nested-text">от</span>
+                                            <span class="accordion_nested-text accordion_nested-text-1">от</span>
                                             <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text">до</span>
+                                            <span class="accordion_nested-text accordion_nested-text-2">до</span>
                                             <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text">см.</span>
+                                            <span class="accordion_nested-text accordion_nested-text-3">см.</span>
                                         </div>
                                     </div>
                                     <div class="accordion_nested-form">
                                         <span class="accordion_nested-text">Ширина</span>
                                         <div class="accordion_nested-form-container">
-                                            <span class="accordion_nested-text">от</span>
+                                            <span class="accordion_nested-text accordion_nested-text-1">от</span>
                                             <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text">до</span>
+                                            <span class="accordion_nested-text accordion_nested-text-2">до</span>
                                             <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text">см.</span>
+                                            <span class="accordion_nested-text accordion_nested-text-3">см.</span>
                                         </div>
                                     </div>
 
@@ -375,7 +376,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="gold-button filtration__btn-mobil">фильтр <span>1</span></button>
+                <button class="gold-button filtration__btn-mobil">фильтр <span>2</span></button>
             </div>
             <div class="col-lg-10 col-sm-9 catalog-page__right-column">
                 <div class="catalog-page__switchGroup">
@@ -830,7 +831,7 @@
         </div>
     </div>
 </main>
-<div class="mobil-filter">
+<div id="mobil-filter" class="mobil-filter">
     <div class="filtration filtration_open">
         <div class="marked-block-container">
             <div class="marked-block">
@@ -918,21 +919,21 @@
                         <div class="accordion_nested-form">
                             <span class="accordion_nested-text">Длина</span>
                             <div class="accordion_nested-form-container">
-                                <span class="accordion_nested-text">от</span>
+                                <span class="accordion_nested-text accordion_nested-text-1">от</span>
                                 <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text">до</span>
+                                <span class="accordion_nested-text accordion_nested-text-2">до</span>
                                 <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text">см.</span>
+                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>
                             </div>
                         </div>
                         <div class="accordion_nested-form">
                             <span class="accordion_nested-text">Ширина</span>
                             <div class="accordion_nested-form-container">
-                                <span class="accordion_nested-text">от</span>
+                                <span class="accordion_nested-text accordion_nested-text-1">от</span>
                                 <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text">до</span>
+                                <span class="accordion_nested-text accordion_nested-text-2">до</span>
                                 <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text">см.</span>
+                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>
                             </div>
                         </div>
 

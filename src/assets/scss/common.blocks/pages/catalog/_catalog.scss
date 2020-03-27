@@ -156,6 +156,7 @@
 
     .product-card_catalogVersion .product-card__img img {
       min-height: 375px;
+      height: 375px;
     }
   }
 
@@ -167,6 +168,7 @@
     .catalog-item {
       .product-card_catalogVersion .product-card__img img {
         min-height: 580px;
+        height: 580px;
       }
     }
   }
@@ -175,6 +177,7 @@
     .catalog-item {
       .product-card_catalogVersion .product-card__img img {
         min-height: 501px;
+        height: 501px;
       }
     }
   }
@@ -182,6 +185,7 @@
   @media (min-width: 1500px) {
     .catalog-page_filterNo .catalog-item .product-card_catalogVersion .product-card__img img {
       min-height: 632px;
+      height: 632px;
     }
   }
 
@@ -198,6 +202,7 @@
       .catalog-item {
         .product-card_catalogVersion .product-card__img img {
           min-height: 514px;
+          height: 514px;
         }
       }
     }
@@ -206,6 +211,7 @@
       .catalog-item {
         .product-card_catalogVersion .product-card__img img {
           min-height: 379px;
+          height: 379px;
         }
       }
     }
@@ -213,6 +219,7 @@
     .catalog-page_cardFourth {
       .product-card_catalogVersion .product-card__img img {
         min-height: 270px;
+        height: 270px;
       }
     }
   }
@@ -222,6 +229,7 @@
       .catalog-item {
         .product-card_catalogVersion .product-card__img img {
           min-height: 250px;
+          height: 250px;
         }
       }
     }
@@ -230,6 +238,7 @@
       .catalog-item {
         .product-card_catalogVersion .product-card__img img {
           min-height: 455px;
+          height: 455px;
         }
       }
     }
@@ -240,6 +249,7 @@
       .catalog-item {
         .product-card_catalogVersion .product-card__img img {
           min-height: 230px;
+          height: 230px;
         }
       }
     }

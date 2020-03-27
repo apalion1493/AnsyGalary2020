@@ -59,6 +59,21 @@
   margin-bottom: 0;
 }
 
+.accordion_nested-text-1 {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+.accordion_nested-text-2 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.accordion_nested-text-3 {
+  margin-left: 3px;
+  margin-right: 0;
+}
+
 .accordion_nested-form {
   margin-bottom: 17px;
 
@@ -321,5 +336,17 @@
     .filtration__wrapper-2-footer .panel {
       margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width: 340px) {
+  .new-design2020 .mobil-filter .filtration__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .new-design2020 .mobil-filter .filtration__wrapper-2-footer .panel {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
