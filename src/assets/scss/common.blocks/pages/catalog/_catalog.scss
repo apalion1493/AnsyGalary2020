@@ -352,6 +352,8 @@
 
     .catalog-item {
       width: 50%;
+      margin-bottom: 20px;
+
       &:nth-child(even) {
         padding-left: 7px;
         padding-right: 1px;
@@ -369,7 +371,7 @@
         max-width: 100%;
         padding-right: 42px;
         padding-left: 42px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
 
       .product-card_catalogVersion {
@@ -402,7 +404,7 @@
 @media (min-width: 992px) {
   .catalog-body.new-design2020 {
     main {
-      padding-top: 51px;
+      padding-top: 146px;
     }
   }
 }

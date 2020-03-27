@@ -601,53 +601,56 @@
     #header.header {
       position: fixed;
       min-height: auto;
-      height: 51px;
-      transition: transform 0.2s;
+      transition: .3s;
       padding-top: 10px;
-      
-      .header__logo-link {
-        display: none;
-      }
-
-      .header__nav-container {
-        transform: translateY(-130%);
-        max-width: 529px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .header__grid {
-        border-bottom: none;
-      }
-
-      .header__list {
-        margin-top: 0;
-      }
-
-      .header__nav {
-        max-width: 529px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .header__search {
-        position: relative;
-        z-index: 1;
-
-        input {
-          padding-left: 0;
-        }
-
-        &.active {
-          input {
-            padding-left: 20px;
-          }
-        }
-      }
+      height: 146px;
 
       &.out {
         transform: translateY(-100%);
-        transition: transform 0.2s;
+      }
+
+      &.noLogo {
+        height: 51px;
+        transition: .3s;
+
+        .header__logo-link {
+          display: none;
+        }
+
+        .header__nav-container {
+          transform: translateY(-130%);
+          max-width: 529px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .header__grid {
+          border-bottom: none;
+        }
+
+        .header__list {
+          margin-top: 0;
+        }
+
+        .header__nav {
+          max-width: 529px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .header__search {
+          input {
+            padding-left: 0;
+          }
+
+          &.active {
+            position: relative;
+            z-index: 1;
+            input {
+              padding-left: 20px;
+            }
+          }
+        }
       }
     }
 
