@@ -15,14 +15,18 @@ $('.header__search-icon').click(function () {
     $('#header').addClass('openSearch');
 });
 
-jQuery(function($){
-    $(document).mouseup(function (e){
-        let div = $(".header__mob-search-container");
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
-            $('#header').removeClass('openSearch');
-        }
-    });
+$('.header__search-bg').click(function () {
+    $('#header').removeClass('openSearch');
 });
+
+// jQuery(function($){
+//     $(document).mouseup(function (e){
+//         let div = $(".header__mob-search-container");
+//         if (!div.is(e.target) && div.has(e.target).length === 0) {
+//             $('#header').removeClass('openSearch');
+//         }
+//     });
+// });
 
 $('#header__mob-burger').click(function () {
     $('#header').toggleClass('active');
