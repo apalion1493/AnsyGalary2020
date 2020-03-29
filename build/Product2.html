@@ -157,16 +157,79 @@
                             </div>
                         </div>
                         <div class="product-page__tabs">
-                            <ul class="nav nav-tabs">
-                                <li class="">
-                                    <a data-toggle="tab" href="#description">Описание</a>
-                                </li>
-                                <li class="active">
-                                    <a data-toggle="tab" href="#characteristics">Помощь в подборе</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane " id="description">
+                            <div class="product-page__tabs-content">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#description">Описание</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#characteristics">Помощь в подборе</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="description">
+                                        <ul class="product-page__tab-description">
+                                            <li class="product-page__tab-description-item">
+                                                <span class="product-page__tab-description-title">Ручная работа</span>
+                                                <p>Ковёр ткали 2 мастера в течение 9 месяцев.</p>
+                                            </li>
+                                            <li class="product-page__tab-description-item">
+                                                <span class="product-page__tab-description-title">Шерсть + бамбуковый шелк</span>
+                                                <p>Овечья шерсть – мягкий на ощупь,</p>
+                                                <p>эластичный и долговечный материал.</p>
+                                                <p class="mt">Бамбуковый шелк – гипоаллергенное волокно, придающее блеск орнаменту ковра.</p>
+                                            </li>
+                                            <li class="product-page__tab-description-item">
+                                                <span class="product-page__tab-description-title">Высокая плотность</span>
+                                                <p>Соткан с применением двойного узелка.</p>
+                                                <p>Более 200 000 узлов на квадратный метр.</p>
+                                            </li>
+                                            <li class="product-page__tab-description-item">
+                                                <span class="product-page__tab-description-title">Индийский ковер</span>
+                                                <p>Соткан в Джайпуре. Этот город – древнейший центр искусств, известный великолепными коврами.</p>
+                                            </li>
+                                        </ul>
+                                        <p class="product-page__tab-description-text">Ковер URBAN - неоспоримое олицетворение стиля, яркий с уникальным дизайном, и в то же время романтичный, - добавит немало волнительных эмоций и откроет мир новых идей и открытий. Палитра ковра впечатляет оригинальными "fashion"- идеями и видением стиля. Ковер URBAN - для тех, кто предпочитает наслаждаться жизнью!</p>
+                                    </div>
+                                    <div class="tab-pane" id="characteristics">
+                                        <ul class="product-page__tab-assist">
+                                            <li class="product-page__tab-assist-item">
+                                                <span class="product-page__tab-assist-num">1</span>
+                                                <div class="product-page__tab-assist-description">
+                                                    <p>Определитесь с размером ковра: <br>
+                                                        замерьте минимум и максимум по длине и ширине.</p>
+                                                    <a href="#">Как выбрать размер ковра?</a>
+                                                </div>
+                                            </li>
+                                            <li class="product-page__tab-assist-item">
+                                                <span class="product-page__tab-assist-num">2</span>
+                                                <div class="product-page__tab-assist-description">
+                                                    <p>Сфотографируйте свой интерьер и отправьте нам на <a href="#">Whatsapp</a> или
+                                                        <a href="#">email</a></p>
+                                                </div>
+                                            </li>
+                                            <li class="product-page__tab-assist-item">
+                                                <span class="product-page__tab-assist-num">3</span>
+                                                <div class="product-page__tab-assist-description">
+                                                    <p>Получите подборку подходящих ковров от наших декораторов</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="product-page__tab-assist-footer">
+                                            <div class="product-page__tab-assist-footer-line">
+                                                <span>или</span>
+                                            </div>
+                                            <p class="product-page__tab-assist-footer-text">Позвоните нам и получите персональные рекомендации по телефону</p>
+                                            <a class="product-page__tab-assist-footer-num" href="tel:+79037292084">+7 903 729 20 84</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="product-page__mobAccordion">
+                                <button class="accordion active">Описание <i></i></button>
+                                <div class="panel" style="display:flex;">
                                     <ul class="product-page__tab-description">
                                         <li class="product-page__tab-description-item">
                                             <span class="product-page__tab-description-title">Ручная работа</span>
@@ -190,7 +253,9 @@
                                     </ul>
                                     <p class="product-page__tab-description-text">Ковер URBAN - неоспоримое олицетворение стиля, яркий с уникальным дизайном, и в то же время романтичный, - добавит немало волнительных эмоций и откроет мир новых идей и открытий. Палитра ковра впечатляет оригинальными "fashion"- идеями и видением стиля. Ковер URBAN - для тех, кто предпочитает наслаждаться жизнью!</p>
                                 </div>
-                                <div class="tab-pane active" id="characteristics">
+
+                                <button class="accordion">Помощь в подборе <i></i></button>
+                                <div class="panel" style="display: none">
                                     <ul class="product-page__tab-assist">
                                         <li class="product-page__tab-assist-item">
                                             <span class="product-page__tab-assist-num">1</span>
@@ -426,6 +491,7 @@
     </div>
 </footer>
 
+<script src="assets/js/old-all.js"></script>
 <script src="assets/js/libs.min.js"></script>
 <script>
     alert = function() {};

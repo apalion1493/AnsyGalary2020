@@ -142,10 +142,12 @@ for (i = 0; i < acc.length; i++) {
 
 var filterButtonClose = document.querySelector('#filtration__header');
 var catalogPage = document.querySelector('#catalog-page');
-filterButtonClose.addEventListener('click', function () {
-    catalogPage.classList.toggle("catalog-page_filterNo");
-});
-
-
-
 var container = document.querySelector('.catalog-page__switchGroup');
+if (filterButtonClose) {
+    filterButtonClose.addEventListener('click', function () {
+        catalogPage.classList.toggle("catalog-page_filterNo");
+    });
+}
+
+
+

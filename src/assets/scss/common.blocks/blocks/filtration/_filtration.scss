@@ -24,12 +24,13 @@
     height: 7px;
     display: block;
     transition: 0.2s;
+    transform: rotate(180deg);
   }
 
   &.active {
     color: #222222;
     i {
-      transform: rotate(180deg);
+      transform: rotate(0deg);
       transition: 0.2s;
     }
   }

@@ -411,15 +411,15 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     border: 1px solid #BEA267;
-    background: #BEA267;
+    background: #CDB072;
     border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
 
     &:hover {
-      background: #ffffff;
-      color: #BEA267;
+      background: #BEA267;
       transition: 0.2s;
     }
   }

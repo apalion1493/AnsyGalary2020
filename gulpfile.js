@@ -38,10 +38,14 @@ function css() {
         .pipe(gulp.dest('build/assets/css'))
 }
 
+function scriptsOld() {
+    return gulp.src('src/assets/js/libs/old-all.js')
+        .pipe(gulp.dest('build/assets/js'))
+}
+
 function scripts() {
 
     return gulp.src([
-        'src/assets/js/libs/old-all.js',
         'src/assets/js/pages/**/*.js',
         'src/assets/js/main.js'
     ])
@@ -110,6 +114,7 @@ function watch() {
 gulp.task('styles', styles);
 gulp.task('css', css);
 gulp.task('scripts', scripts);
+gulp.task('scriptsOld', scriptsOld);
 gulp.task('html', html);
 gulp.task('img', img);
 gulp.task('fonts', fonts);
@@ -117,5 +122,5 @@ gulp.task('og', og);
 gulp.task('og', favicons);
 gulp.task('del', clean);
 gulp.task('watch', watch);
-gulp.task('build', gulp.series(clean, gulp.parallel(styles,css,scripts,html,img,fonts,og,favicons)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles,css,scripts,scriptsOld,html,img,fonts,og,favicons)));
 gulp.task('dev', gulp.series('build','watch'));

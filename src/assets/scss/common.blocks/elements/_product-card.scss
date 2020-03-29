@@ -1,6 +1,5 @@
 .new-design2020 {
   .product-card {
-    //max-width: 256px;
     max-width: 100%;
     margin-left: 21px;
     margin-right: 21px;
@@ -8,14 +7,16 @@
   }
 
   .product-card_homePage {
-    margin: 10px 5px 31px;
-    padding: 10px 16px 20px;
+   .product-card {
+     margin: 10px 5px 31px;
+     padding: 10px 16px 20px;
 
 
-    &:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-      transition: 0.2s;
-    }
+     &:hover {
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+       transition: 0.2s;
+     }
+   }
   }
 
   .product-card__description {
@@ -140,6 +141,7 @@
     line-height: 17px;
     text-align: right;
     color: #777777;
+    white-space: nowrap;
   }
 
   .product-card__description-price-current {
@@ -282,8 +284,10 @@
     }
 
     .product-card_homePage {
-      max-width: 230px;
-      margin-bottom: 11px;
+      .product-card {
+        max-width: 230px;
+        margin-bottom: 11px;
+      }
     }
 
     .product-card__img {
