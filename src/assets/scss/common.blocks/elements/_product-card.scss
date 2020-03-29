@@ -4,6 +4,17 @@
     margin-left: 21px;
     margin-right: 21px;
     transition: 0.2s;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      transition: 0.2s;
+
+      .product-card__liked {
+        opacity: 1;
+        z-index: 1;
+        transition: 0.2s;
+      }
+    }
   }
 
   .product-card_homePage {
@@ -205,7 +216,7 @@
     }
   }
 
-  .product-card_catalogVersion {
+  .product-card_catalogVersion .product-card {
     max-width: 100%;
     width: 100%;
     padding: 20px 30px 28px;
@@ -240,41 +251,30 @@
   }
 
   @media (max-width: 1440px) {
-    .product-card_catalogVersion .product-card__img img {
+    .product-card_catalogVersion .product-card .product-card__img img {
       min-height: 480px;
       height: 480px;
     }
   }
 
   @media (max-width: 1300px) {
-    .product-card_catalogVersion {
+    .product-card_catalogVersion .product-card {
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
   }
 
   @media (max-width: 1199.98px) {
-    //.product-card {
-    //  margin-left: 9px;
-    //  padding-left: 21px;
-    //  margin-right: 0;
-    //  max-width: 100%;
-    //}
-
-    .product-card_catalogVersion .product-card__img img {
+    .product-card_catalogVersion .product-card .product-card__img img {
       min-height: 330px;
       height: 330px;
     }
   }
 
   @media (max-width: 1024px) {
-    .product-card_catalogVersion .product-card__img img {
+    .product-card_catalogVersion .product-card .product-card__img img {
       min-height: 308px;
       height: 308px;
-    }
-
-    .catalog-page_cardFourth .catalog-item .product-card_catalogVersion .product-card__img img {
-
     }
   }
 
@@ -302,10 +302,22 @@
       display: none;
     }
 
-    .product-card__description-mobil {
+    .product-card__description-mobil.product-card__description-mobil-all {
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .catalog-section {
+      .product-card__description-mobil.product-card__description-mobil-catalog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-card__description-mobil.product-card__description-mobil-all {
+        display: none;
+      }
     }
 
     .product-card__description-price {
@@ -318,36 +330,38 @@
       font-size: 12px;
     }
 
-    .product-card.product-card_catalogVersion {
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      padding: 10px 0 !important;
-      margin-bottom: 0;
+    .product-card_catalogVersion {
+      .product-card {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px 0 !important;
+        margin-bottom: 0;
 
-      .product-card__img img {
-        height: auto;
-        min-height: auto;
-      }
-
-      .product-card__description-text {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .product-card__description-price {
-        p, span {
-          font-size: 10px;
-          margin-right: 0;
+        .product-card__img img {
+          height: auto;
+          min-height: auto;
         }
 
-        p {
-          font-size: 11px;
+        .product-card__description-text {
+          display: flex;
+          flex-direction: column;
         }
-      }
 
-      .product-card__description-text-size {
-        font-size: 14px;
+        .product-card__description-price {
+          p, span {
+            font-size: 10px;
+            margin-right: 0;
+          }
+
+          p {
+            font-size: 11px;
+          }
+        }
+
+        .product-card__description-text-size {
+          font-size: 14px;
+        }
       }
     }
 
