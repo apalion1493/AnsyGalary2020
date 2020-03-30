@@ -68,12 +68,12 @@ $('.header__catalog-btn-close').click(function () {
     $('#header').addClass('noFilter').removeClass('hasFilter');
 });
 
-$('.catalog-page__scale-block-plus').click(function () {
+$('.catalog-page__scale-block-minus').click(function () {
     $('.catalog-page__scale').removeClass('enlarged').addClass('reduced');
     $('#catalog-page').addClass('catalog-page_cardFourth')
 });
 
-$('.catalog-page__scale-block-minus').click(function () {
+$('.catalog-page__scale-block-plus').click(function () {
     $('.catalog-page__scale').removeClass('reduced').addClass('enlarged');
     $('#catalog-page').removeClass('catalog-page_cardFourth')
 });

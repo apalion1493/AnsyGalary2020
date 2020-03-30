@@ -44,13 +44,18 @@
   }
 
   .paginator .pagination-new .disabledBlock .dropdown  {
-    padding: 7px 0;
+    padding: 0;
   }
 
   .paginator .pagination-new .disabledBlock .dropdown-menu>li>a:hover,
   .paginator .pagination-new>li>a:hover,
   .paginator .pagination-new>li>span:hover {
     color: #BEA267;
+  }
+
+  .paginator .pagination-new>li.active>a:hover,
+  .paginator .pagination-new>li.active>span:hover {
+    color: #ffffff;
   }
 
   .pagination-new .caret {
@@ -63,5 +68,10 @@
 
   .paginator .pagination-new .disabledBlock .dropdown-toggle {
     padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

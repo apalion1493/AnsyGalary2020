@@ -132,6 +132,10 @@
       position: relative;
       margin-bottom: 14px;
 
+      &:hover {
+        font-weight: bold;
+      }
+
       &.active {
         font-weight: bold;
       }
@@ -263,6 +267,10 @@
           text-transform: uppercase;
           color: #777777;
           white-space: nowrap;
+
+          &:hover {
+            color: #222222;
+          }
         }
       }
 
