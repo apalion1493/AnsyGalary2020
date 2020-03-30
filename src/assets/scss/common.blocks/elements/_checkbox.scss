@@ -1,60 +1,58 @@
-.checkbox-block {
-  display: block;
-  position: relative;
-  padding-left: 23px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 17px;
-  color: #333333;
-  user-select: none;
-
-  &:hover {
-    color: #BEA267;
-  }
-
-  input {
-    position: absolute;
-    opacity: 0;
+.new-design2020 {
+  .checkbox-block {
+    display: block;
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 12px;
     cursor: pointer;
-    height: 0;
-    width: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    user-select: none;
+
+    &:hover {
+      color: #BEA267;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
   }
-}
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: initial;
-  border: 1px solid #BEBEBE;
-  border-radius: 2px;
-}
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: initial;
+    border: 1px solid #BEBEBE;
+    border-radius: 2px;
+  }
 
-//.checkbox-block:hover input ~ .checkmark {
-//  background-color: #ccc;
-//}
+  .checkbox-block input:checked ~ .checkmark {
+    background-color: #BEA267;
+  }
 
-.checkbox-block input:checked ~ .checkmark {
-  background-color: #BEA267;
-}
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+  .checkbox-block input:checked ~ .checkmark:after {
+    display: block;
+  }
 
-.checkbox-block input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.checkbox-block .checkmark:after {
-  left: 2px;
-  top: 2px;
-  width: 10px;
-  height: 8px;
-  background: url("../img/icon/checkbox-icon-white.svg") no-repeat center;
-  background-size: 100% auto;
+  .checkbox-block .checkmark:after {
+    left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 8px;
+    background: url("../img/icon/checkbox-icon-white.svg") no-repeat center;
+    background-size: 100% auto;
+  }
 }

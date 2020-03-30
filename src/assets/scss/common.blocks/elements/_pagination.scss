@@ -1,67 +1,67 @@
+.new-design2020 {
+  .paginator-container {
+    max-width: 171px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.paginator-container {
-  max-width: 171px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .pagination-new {
+    margin-top: 51px;
+    margin-bottom: 18px;
+  }
 
-.pagination-new {
-  margin-top: 51px;
-  margin-bottom: 18px;
-  //margin-left: -26px;
-}
+  .paginator .pagination-new>li>a,
+  .paginator .pagination-new>li>span {
+    width: 35px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.paginator .pagination-new>li>a,
-.paginator .pagination-new>li>span {
-  width: 35px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .pagination-new>.active>a,
+  .pagination-new>.active>a:focus,
+  .pagination-new>.active>a:hover,
+  .pagination-new>.active>span,
+  .pagination-new>.active>span:focus,
+  .pagination-new>.active>span:hover {
+    background: #BEA267;
+    border-color: #BEA267;
+  }
 
-.pagination-new>.active>a,
-.pagination-new>.active>a:focus,
-.pagination-new>.active>a:hover,
-.pagination-new>.active>span,
-.pagination-new>.active>span:focus,
-.pagination-new>.active>span:hover {
-  background: #BEA267;
-  border-color: #BEA267;
-}
+  .pagination-new>li>a, .pagination-new>li>span {
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+    min-width: 30px;
+  }
 
-.pagination-new>li>a, .pagination-new>li>span {
-  padding: 7px 0;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #555555;
-  min-width: 30px;
-}
+  .paginator .pagination-new .disabledBlock .dropdown  {
+    padding: 7px 0;
+  }
 
-.paginator .pagination-new .disabledBlock .dropdown  {
-  padding: 7px 0;
-}
+  .paginator .pagination-new .disabledBlock .dropdown-menu>li>a:hover,
+  .paginator .pagination-new>li>a:hover,
+  .paginator .pagination-new>li>span:hover {
+    color: #BEA267;
+  }
 
-.paginator .pagination-new .disabledBlock .dropdown-menu>li>a:hover,
-.paginator .pagination-new>li>a:hover,
-.paginator .pagination-new>li>span:hover {
-  color: #BEA267;
-}
+  .pagination-new .caret {
+    border: none;
+    background: url("../img/icon/arrow-paginator.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 8px;
+    height: 4px;
+  }
 
-.pagination-new .caret {
-  border: none;
-  background: url("../img/icon/arrow-paginator.svg") no-repeat center;
-  background-size: 100% auto;
-  width: 8px;
-  height: 4px;
-}
-
-.paginator .pagination-new .disabledBlock .dropdown-toggle {
-  padding: 0;
+  .paginator .pagination-new .disabledBlock .dropdown-toggle {
+    padding: 0;
+  }
 }

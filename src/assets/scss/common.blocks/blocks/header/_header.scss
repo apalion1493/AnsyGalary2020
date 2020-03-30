@@ -399,6 +399,8 @@
       padding-top: 0;
       display: flex;
       flex-direction: column;
+      padding-left: 14px;
+      padding-right: 14px;
     }
 
     .header__mob-menu-tel {
@@ -544,8 +546,6 @@
   }
 
   @media (max-width: 767.98px) {
-
-
     .header__catalog {
 
       .header__catalog-btn {
