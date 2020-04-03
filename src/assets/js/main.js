@@ -61,18 +61,21 @@ $('#catalog-page__switch-2').click(function () {
 
 $('.filtration__btn-mobil').click(function () {
     $('.mobil-filter').addClass('active');
+    $('.catalog-body').addClass('overflowHidden');
     $('.header__catalog').addClass('open');
     $('#header').addClass('hasFilter').removeClass('noFilter');
 });
 
 $('.header__catalog-btn-filter').click(function () {
     $('.mobil-filter').addClass('active');
+    $('.catalog-body').addClass('overflowHidden');
     $('.header__catalog').addClass('open');
     $('#header').addClass('hasFilter').removeClass('noFilter');
 });
 
 $('.header__catalog-btn-close').click(function () {
     $('.mobil-filter').removeClass('active');
+    $('.catalog-body').removeClass('overflowHidden');
     $('#header').addClass('noFilter').removeClass('hasFilter');
 });
 

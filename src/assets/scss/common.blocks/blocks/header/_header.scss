@@ -416,6 +416,10 @@
 
       &.openSearch {
         padding-bottom: 0;
+
+        .header__mob-search-container {
+          overflow: inherit;
+        }
       }
 
       .container {
@@ -550,7 +554,7 @@
       opacity: 0;
       height: 0;
       transition: 0.2s;
-      //overflow: hidden;
+      overflow: hidden;
     }
 
     .header__mob-search {
