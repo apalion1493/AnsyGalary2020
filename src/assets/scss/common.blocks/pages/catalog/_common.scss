@@ -7,9 +7,9 @@
     min-height: calc(100vh - 54px);
     height: 100%;
     background: #F9F9F9;
-    backdrop-filter: blur(10px);
+    //backdrop-filter: blur(10px);
     z-index: 10;
-    
+
     .filtration_open {
       display: block;
       background: #F9F9F9;
@@ -20,7 +20,7 @@
     .panel {
       background: initial;
     }
-    
+
     .marked-block-container {
       display: none;
     }
@@ -76,6 +76,37 @@
       background: #BEA267;
       border: 1px solid #BEA267;
       border-radius: 50%;
+    }
+  }
+
+  .mobil-filter__footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1);
+    height: 49px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+    button, a {
+      width: 158px;
+      height: 39px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: 8px;
+      margin-right: 8px;
+
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .gold-button {
+      border-width: 1px;
     }
   }
 

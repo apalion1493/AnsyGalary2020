@@ -1,22 +1,30 @@
 jQuery(function($){
     $(document).mouseup(function (e){
-        let div = $(".header__search-input");
+        let div = $(".header__search");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.header__search').removeClass('active');
+            // $('#header').removeClass('openSearch');
         }
     });
 });
 
 $('.btn.header__search-btn').click(function () {
-    $('.header__search').addClass('active');
+    $('.header__search').toggleClass('active');
+    $('#header').toggleClass('openSearch');
 });
 
-$('.header__search-icon').click(function () {
-    $('#header').addClass('openSearch');
-});
+// $('.header__search-icon').click(function () {
+//     $('#header').toggleClass('openSearch');
+// });
 
 $('.header__search-bg').click(function () {
     $('#header').removeClass('openSearch');
+    $('.header__search').removeClass('active');
+});
+
+$('.header__search-closeIcon').click(function () {
+    $('#header').removeClass('openSearch');
+    $('.header__search').removeClass('active');
 });
 
 // jQuery(function($){

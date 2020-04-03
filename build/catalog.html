@@ -35,19 +35,23 @@
                     <a class="header__logo-link" href="#"></a>
                 </div>
                 <div class="header__catalog-block noted"> <!--noted-->
-                    <button class="header__catalog-btn header__catalog-btn-close">Закрыть фильтр <span>3</span></button>
-                    <a href="#mobil-filter" class="header__catalog-btn header__catalog-btn-filter">Фильтр <span>3</span></a>
+                    <button class="header__catalog-btn header__catalog-btn-close"><i></i>свернуть фильтр <span>3</span></button>
+                    <a href="#mobil-filter" class="header__catalog-btn header__catalog-btn-filter"><i></i>развернуть фильтр <span>3</span></a>
                 </div>
             </div>
             <div class="col-md-5 col-xs-4 header__grid-block">
                 <div class="header__wrapper">
-                    <div class="header__search">
+                    <form class="header__search">
                         <input type="text" placeholder="Номер ковра" class="input header__search-input">
                         <div class="btn header__search-btn">
                             <i class="fa fa-search header__search-icon" aria-hidden="true"></i>
                         </div>
+                        <div class="header__search-block">
+                            <button class="btn gold-button header__search-button">Искать</button>
+                            <i class="header__search-closeIcon"></i>
+                        </div>
                         <span class="header__search-bg"></span>
-                    </div>
+                    </form>
                     <div class="header__selected">
                         <a href="#">
                             <i></i>
@@ -84,6 +88,7 @@
             <div class="col-xs-12">
                 <div class="header__mob-search">
                     <input type="text" placeholder="Номер ковра">
+                    <button class="btn gold-button header__mob-search-btn">Искать</button>
                 </div>
             </div>
         </div>
@@ -1162,7 +1167,13 @@
             </div>
         </div>
     </div>
+    <div class="mobil-filter__footer">
+        <button class="btn gold-button">Сбросить фильтр</button>
+        <button class="btn gold-button-bg">Применить фильтр</button>
+    </div>
 </div>
+
+
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row mx-0 footer_nav">
