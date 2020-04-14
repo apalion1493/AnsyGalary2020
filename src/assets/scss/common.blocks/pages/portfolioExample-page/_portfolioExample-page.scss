@@ -1,0 +1,122 @@
+.new-design2020  {
+  .portfolioExample-page {
+    margin-top: 56px;
+    margin-bottom: 48px;
+  }
+
+  .portfolioExample-page__row {
+    margin-left: -5px;
+    margin-right: -5px;
+    width: auto !important;
+  }
+
+  .portfolioExample-page__col {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .portfolioExample-page__content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .portfolioExample-page__content-header-block {
+    background: rgba(237, 233, 222, .7);
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+  }
+
+  .portfolioExample-page__content-header-title {
+    text-align: left;
+    margin: 0;
+  }
+
+  .portfolioExample-page__content-wrapper {
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .portfolioExample-page__content-wrapper-1 {
+    padding-top: 22px;
+    padding-bottom: 33px;
+    border-top: 1px solid #E6E6E6;
+  }
+
+  .portfolioExample-page__content-wrapper-2 {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .portfolioExample-page__content-linkBack {
+    color: #BEA267;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .btn.portfolioExample-page__content-btn {
+    max-width: 340px;
+    margin-top: 16px;
+  }
+
+  .portfolioExample-page__content-catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolioExample-page__content-catalog-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .portfolioExample-page__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolioExample-page__card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .portfolioExample-page__card-title {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .portfolioExample-page__card-num {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}

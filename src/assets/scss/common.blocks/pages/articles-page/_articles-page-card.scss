@@ -1,0 +1,120 @@
+
+.new-design2020 {
+  .product-card__description-mobil-article {
+    display: none;
+  }
+
+  .article-card-group {
+    padding-bottom: 30px;
+
+    .product-card {
+      padding-left: 7px;
+      padding-right: 7px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .product-card__description-desktop {
+      display: none;
+    }
+
+    .product-card__description-mobil-article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-card__description-num {
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #333333;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 235px;
+        height: 235px;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 250px;
+        height: 250px;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 281px;
+        height: 281px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 233px;
+        height: 233px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 255px;
+        height: 255px;
+      }
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 277px;
+        height: 277px;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 303px;
+        height: 303px;
+      }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .article-card-group {
+      .product-card__img img {
+        min-height: 328px;
+        height: 255px;
+      }
+    }
+  }
+
+
+
+  @media (max-width: 767.98px) {
+    .article-card-group {
+      .product-card__description-mobil-all {
+        display: none !important;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+.vertical-navigation {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.vertical-navigation__item {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.active {
+    .vertical-navigation__link {
+      font-weight: bold;
+    }
+  }
+}
+
+.vertical-navigation__link {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #222222;
+}
