@@ -26,3 +26,12 @@
   padding-left: 7px;
   padding-right: 7px;
 }
+
+@media (max-width: 767.98px) {
+  .article-page__slider-container {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+

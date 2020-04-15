@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/oldStyle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="new-design2020 catalog-body">
+<body class="new-design2020">
 
 <header id="header" class="header noFilter"> <!--hasFilter-->
     <div class="container">
@@ -1279,6 +1279,12 @@
 <script src="assets/js/libs.min.js"></script>
 <script>
     alert = function() {};
+
+    let catalogTrigger = document.getElementById('mobil-filter');
+    if(catalogTrigger){
+        $('body').addClass('catalog-body');
+    }
+
 </script>
 </body>
 </html>
