@@ -17,7 +17,7 @@
 
   .portfolioExample-page__content-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 25px;
   }
 
@@ -27,6 +27,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     min-width: 70px;
+    height: 57px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,38 +86,47 @@
     color: #555555;
     margin-bottom: 20px;
     display: block;
+    padding-left: 8px;
   }
 
-  .portfolioExample-page__card {
-    display: flex;
-    flex-direction: column;
+  //.portfolioExample-page__card {
+  //  display: flex;
+  //  flex-direction: column;
+  //}
+  //
+  //.portfolioExample-page__card-body {
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //  padding-top: 15px;
+  //  padding-bottom: 10px;
+  //}
+  //
+  //.portfolioExample-page__card-title {
+  //  font-weight: bold;
+  //  font-size: 13px;
+  //  line-height: 16px;
+  //  text-align: center;
+  //  text-transform: uppercase;
+  //  color: #222222;
+  //  margin-bottom: 6px;
+  //  display: block;
+  //}
+  //
+  //.portfolioExample-page__card-num {
+  //  font-size: 10px;
+  //  line-height: 12px;
+  //  text-align: center;
+  //  letter-spacing: 0.05em;
+  //  text-transform: uppercase;
+  //  color: #333333;
+  //}
+
+  .portfolioExample-page__card-container.article-card-group {
+    .product-card {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
-  .portfolioExample-page__card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-
-  .portfolioExample-page__card-title {
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #222222;
-    margin-bottom: 6px;
-    display: block;
-  }
-
-  .portfolioExample-page__card-num {
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #333333;
-  }
 }
