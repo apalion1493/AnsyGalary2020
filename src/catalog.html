@@ -10,6 +10,118 @@
     <!-- Appended styles for site -->
     <link rel="stylesheet" href="assets/css/oldStyle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .new-design2020 .mobil-filter__counter {
+            display: none;
+        }
+
+        .new-design2020 .mobil-filter__footer {
+            display: none;
+        }
+
+        .new-design2020 .filtration__body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 767.98px) {
+            .new-design2020 .filtration {
+                position: fixed;
+                top: 54px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                min-height: calc(100vh - 54px);
+                height: 100%;
+                background: #f9f9f9;
+                z-index: 10;
+                display: none;
+            }
+
+            .new-design2020 .filtration__body {
+                background: #f9f9f9;
+                backdrop-filter: blur(10px);
+                padding-top: 16px;
+                overflow: scroll;
+                height: 100%;
+                padding-bottom: 120px;
+            }
+
+            .new-design2020 .marked-block-container {
+                display: none;
+            }
+
+            .new-design2020 .filtration .filtration__wrapper {
+                padding-top: 22px;
+                border-bottom: 1px solid #e2e2e2;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            .new-design2020 .filtration__wrapper>.panel {
+                background: initial;
+                margin-bottom: 22px;
+            }
+
+            .new-design2020 .filtration__wrapper>.accordion {
+                max-width: 100%;
+            }
+
+            .new-design2020 .filtration .mobil-filter__counter {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                text-transform: uppercase;
+                color: #fff;
+                margin-right: auto;
+                margin-left: 17px;
+                background: #bea267;
+                border: 1px solid #bea267;
+                border-radius: 50%;
+            }
+
+            .new-design2020 .filtration__wrapper-2 .accordion_nested {
+                max-width: 100%;
+            }
+
+            .new-design2020 .filtration__wrapper-btn {
+                display: none;
+            }
+
+            .new-design2020 .filtration .filtration__wrapper-2-footer .panel {
+                background: #fff;
+                border-radius: 5px;
+                padding: 12px 32px 24px 18px;
+            }
+
+            .new-design2020 .filtration .filtration__wrapper-2-footer .accordion_nested-form-input {
+                max-width: 100px;
+            }
+
+            .new-design2020 .filtration .accordion_nested-form:nth-child(2) {
+                margin-bottom: 0;
+            }
+
+            .new-design2020 .filtration .filtration__wrapper-2-footer .accordion_nested-form-container {
+                max-width: 316px;
+            }
+
+            .new-design2020 .filtration.active {
+                display: block;
+            }
+
+            .new-design2020 .mobil-filter__footer {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body class="new-design2020">
 
@@ -149,244 +261,250 @@
             </div>
             <div class="col-lg-2 col-sm-3 catalog-page__left-column">
                 <div class="filtration filtration_open">
-                    <div class="marked-block-container">
-                        <div class="marked-block">
-                            <span>Традиционный</span>
-                            <button></button>
+                    <div class="filtration__body">
+                        <div class="marked-block-container">
+                            <div class="marked-block">
+                                <span>Традиционный</span>
+                                <button></button>
+                            </div>
+                            <div class="marked-block">
+                                <span>до 200 x 150 см</span>
+                                <button></button>
+                            </div>
+                            <div class="marked-block">
+                                <span>240 x 170 см</span>
+                                <button></button>
+                            </div>
                         </div>
-                        <div class="marked-block">
-                            <span>до 200 x 150 см</span>
-                            <button></button>
-                        </div>
-                        <div class="marked-block">
-                            <span>240 x 170 см</span>
-                            <button></button>
-                        </div>
-                    </div>
 
-                    <div class="filtration__wrapper filtration__wrapper-1">
-                        <button class="accordion">По стилю <i></i></button>
-                        <div class="panel">
-                            <span class="accordion__text text-bold">Классические</span>
-                            <div class="accordion__list">
-                                <label class="checkbox-block">Традиционный
+                        <div class="filtration__wrapper filtration__wrapper-1">
+                            <button class="accordion">По стилю <span class="mobil-filter__counter">1</span> <i></i></button>
+                            <div class="panel">
+                                <span class="accordion__text text-bold">Классические</span>
+                                <div class="accordion__list">
+                                    <label class="checkbox-block">Традиционный
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Европейская классика
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Ориентальный
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Рустикальный
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <span class="accordion__text">Современные</span>
+                                <span class="accordion__text">Дизайнерские</span>
+                                <span class="accordion__text">Килимы и сумахи</span>
+                            </div>
+                        </div>
+
+                        <div class="filtration__wrapper filtration__wrapper-2">
+                            <button class="accordion">Размер <i></i></button>
+                            <div class="panel">
+                                <label class="checkbox-block">до 200 x 150 см
                                     <input type="checkbox" checked="checked">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="checkbox-block">Европейская классика
+                                <label class="checkbox-block">240 x 170 см
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="checkbox-block">Ориентальный
+                                <label class="checkbox-block">300 x 200 см
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="checkbox-block">Рустикальный
+                                <label class="checkbox-block">300 x 250 см
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">350 x 250 см
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                            </div>
+                                <label class="checkbox-block">400 x 300 см
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">450 x 350 см
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">очень большие
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
 
-                            <span class="accordion__text">Современные</span>
-                            <span class="accordion__text">Дизайнерские</span>
-                            <span class="accordion__text">Килимы и сумахи</span>
-                        </div>
-                    </div>
-
-                    <div class="filtration__wrapper filtration__wrapper-2">
-                        <button class="accordion">Размер <i></i></button>
-                        <div class="panel">
-                            <label class="checkbox-block">до 200 x 150 см
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">240 x 170 см
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">300 x 200 см
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">300 x 250 см
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">350 x 250 см
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">400 x 300 см
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">450 x 350 см
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">очень большие
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-
-                            <div class="filtration__wrapper-2-footer">
-                                <button class="accordion accordion_nested">Указать свой размер <i></i></button>
-                                <div class="panel mb-0">
-                                    <div class="accordion_nested-form">
-                                        <span class="accordion_nested-text">Длина</span>
-                                        <div class="accordion_nested-form-container">
-                                            <span class="accordion_nested-text accordion_nested-text-1">от</span>
-                                            <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text accordion_nested-text-2">до</span>
-                                            <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text accordion_nested-text-3">см.</span>
+                                <div class="filtration__wrapper-2-footer">
+                                    <button class="accordion accordion_nested">Указать свой размер <i></i></button>
+                                    <div class="panel d-flex mb-0">
+                                        <div class="accordion_nested-form">
+                                            <span class="accordion_nested-text">Длина</span>
+                                            <div class="accordion_nested-form-container">
+                                                <span class="accordion_nested-text accordion_nested-text-1">от</span>
+                                                <input class="accordion_nested-form-input" type="text">
+                                                <span class="accordion_nested-text accordion_nested-text-2">до</span>
+                                                <input class="accordion_nested-form-input" type="text">
+                                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion_nested-form">
-                                        <span class="accordion_nested-text">Ширина</span>
-                                        <div class="accordion_nested-form-container">
-                                            <span class="accordion_nested-text accordion_nested-text-1">от</span>
-                                            <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text accordion_nested-text-2">до</span>
-                                            <input class="accordion_nested-form-input" type="text">
-                                            <span class="accordion_nested-text accordion_nested-text-3">см.</span>
+                                        <div class="accordion_nested-form">
+                                            <span class="accordion_nested-text">Ширина</span>
+                                            <div class="accordion_nested-form-container">
+                                                <span class="accordion_nested-text accordion_nested-text-1">от</span>
+                                                <input class="accordion_nested-form-input" type="text">
+                                                <span class="accordion_nested-text accordion_nested-text-2">до</span>
+                                                <input class="accordion_nested-form-input" type="text">
+                                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <button class="btn gold-button filtration__wrapper-btn">Применить</button>
+                                        <button class="btn gold-button filtration__wrapper-btn">Применить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="filtration__wrapper filtration__wrapper-3">
-                        <button class="accordion active">Форма <i></i></button>
-                        <div class="panel" style="display: none;">
-                            <label class="checkbox-block">Круглые
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Прямоугольные
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Квадратные
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
+                        <div class="filtration__wrapper filtration__wrapper-3">
+                            <button class="accordion active">Форма <i></i></button>
+                            <div class="panel" style="display: none;">
+                                <label class="checkbox-block">Круглые
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Прямоугольные
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Квадратные
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filtration__wrapper filtration__wrapper-4">
+                            <button class="accordion active">Материал <i></i></button>
+                            <div class="panel" style="display: none;">
+                                <label class="checkbox-block">Шерстяные
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Шелковые
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Шерсть и шелк
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filtration__wrapper filtration__wrapper-5">
+                            <button class="accordion active">Узор <i></i></button>
+                            <div class="panel" style="display: none;">
+                                <label class="checkbox-block">Абстракция
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Стертая классика
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Геометрия
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Цветы и растения
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Авангард
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filtration__wrapper filtration__wrapper-6">
+                            <button class="accordion active">Страна <i></i></button>
+                            <div class="panel" style="display: none;">
+                                <label class="checkbox-block">Персидские
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Индийские
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Пакистанские
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Непальские
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Китайские
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Дагестанские
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Афганские
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Кавказские
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Турецкие
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Азербайджанские
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">Иранские
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filtration__wrapper filtration__wrapper-7">
+                            <button class="accordion active">Цена <i></i></button>
+                            <div class="panel" style="display: none;">
+                                <label class="checkbox-block">до 100 000 &#8381;
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">от 100 000 до 350 000 &#8381;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-block">от 350 000 &#8381;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="filtration__wrapper filtration__wrapper-4">
-                        <button class="accordion active">Материал <i></i></button>
-                        <div class="panel" style="display: none;">
-                            <label class="checkbox-block">Шерстяные
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Шелковые
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Шерсть и шелк
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="filtration__wrapper filtration__wrapper-5">
-                        <button class="accordion active">Узор <i></i></button>
-                        <div class="panel" style="display: none;">
-                            <label class="checkbox-block">Абстракция
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Стертая классика
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Геометрия
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Цветы и растения
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Авангард
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="filtration__wrapper filtration__wrapper-6">
-                        <button class="accordion active">Страна <i></i></button>
-                        <div class="panel" style="display: none;">
-                            <label class="checkbox-block">Персидские
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Индийские
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Пакистанские
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Непальские
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Китайские
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Дагестанские
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Афганские
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Кавказские
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Турецкие
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Азербайджанские
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">Иранские
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="filtration__wrapper filtration__wrapper-7">
-                        <button class="accordion active">Цена <i></i></button>
-                        <div class="panel" style="display: none;">
-                            <label class="checkbox-block">до 100 000 &#8381;
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">от 100 000 до 350 000 &#8381;
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-block">от 350 000 &#8381;
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
+                    <div class="mobil-filter__footer">
+                        <button class="btn gold-button">Сбросить фильтр</button>
+                        <button class="btn gold-button-bg">Применить фильтр</button>
                     </div>
                 </div>
                 <button class="gold-button filtration__btn-mobil">фильтр <span>2</span></button>
@@ -925,251 +1043,255 @@
         </div>
     </div>
 </main>
-<div id="mobil-filter" class="mobil-filter">
-    <div class="filtration filtration_open">
-        <div class="marked-block-container">
-            <div class="marked-block">
-                <span>Традиционный</span>
-                <button></button>
-            </div>
-            <div class="marked-block">
-                <span>до 200 x 150 см</span>
-                <button></button>
-            </div>
-            <div class="marked-block">
-                <span>240 x 170 см</span>
-                <button></button>
-            </div>
-        </div>
 
-        <div class="filtration__wrapper filtration__wrapper-1">
-            <button class="accordion">По стилю <span class="mobil-filter__counter">1</span> <i></i></button>
-            <div class="panel">
-                <span class="accordion__text text-bold">Классические</span>
-                <div class="accordion__list">
-                    <label class="checkbox-block">Традиционный
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-block">Европейская классика
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-block">Ориентальный
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-block">Рустикальный
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
 
-                <span class="accordion__text">Современные</span>
-                <span class="accordion__text">Дизайнерские</span>
-                <span class="accordion__text">Килимы и сумахи</span>
-            </div>
-        </div>
 
-        <div class="filtration__wrapper filtration__wrapper-2">
-            <button class="accordion">Размер <i></i></button>
-            <div class="panel">
-                <label class="checkbox-block">до 200 x 150 см
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">240 x 170 см
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">300 x 200 см
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">300 x 250 см
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">350 x 250 см
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">400 x 300 см
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">450 x 350 см
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">очень большие
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
 
-                <div class="filtration__wrapper-2-footer">
-                    <button class="accordion accordion_nested">Указать свой размер <i></i></button>
-                    <div class="panel">
-                        <div class="accordion_nested-form">
-                            <span class="accordion_nested-text">Длина</span>
-                            <div class="accordion_nested-form-container">
-                                <span class="accordion_nested-text accordion_nested-text-1">от</span>
-                                <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text accordion_nested-text-2">до</span>
-                                <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>
-                            </div>
-                        </div>
-                        <div class="accordion_nested-form">
-                            <span class="accordion_nested-text">Ширина</span>
-                            <div class="accordion_nested-form-container">
-                                <span class="accordion_nested-text accordion_nested-text-1">от</span>
-                                <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text accordion_nested-text-2">до</span>
-                                <input class="accordion_nested-form-input" type="text">
-                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--<div id="mobil-filter" class="mobil-filter">-->
+<!--    <div class="filtration filtration_open">-->
+<!--        <div class="marked-block-container">-->
+<!--            <div class="marked-block">-->
+<!--                <span>Традиционный</span>-->
+<!--                <button></button>-->
+<!--            </div>-->
+<!--            <div class="marked-block">-->
+<!--                <span>до 200 x 150 см</span>-->
+<!--                <button></button>-->
+<!--            </div>-->
+<!--            <div class="marked-block">-->
+<!--                <span>240 x 170 см</span>-->
+<!--                <button></button>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="filtration__wrapper filtration__wrapper-3">
-            <button class="accordion">Форма <i></i></button>
-            <div class="panel">
-                <label class="checkbox-block">Круглые
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Прямоугольные
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Квадратные
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
+<!--        <div class="filtration__wrapper filtration__wrapper-1">-->
+<!--            <button class="accordion">По стилю <span class="mobil-filter__counter">1</span> <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <span class="accordion__text text-bold">Классические</span>-->
+<!--                <div class="accordion__list">-->
+<!--                    <label class="checkbox-block">Традиционный-->
+<!--                        <input type="checkbox" checked="checked">-->
+<!--                        <span class="checkmark"></span>-->
+<!--                    </label>-->
+<!--                    <label class="checkbox-block">Европейская классика-->
+<!--                        <input type="checkbox">-->
+<!--                        <span class="checkmark"></span>-->
+<!--                    </label>-->
+<!--                    <label class="checkbox-block">Ориентальный-->
+<!--                        <input type="checkbox">-->
+<!--                        <span class="checkmark"></span>-->
+<!--                    </label>-->
+<!--                    <label class="checkbox-block">Рустикальный-->
+<!--                        <input type="checkbox">-->
+<!--                        <span class="checkmark"></span>-->
+<!--                    </label>-->
+<!--                </div>-->
 
-        <div class="filtration__wrapper filtration__wrapper-4">
-            <button class="accordion">Материал <i></i></button>
-            <div class="panel">
-                <label class="checkbox-block">Шерстяные
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Шелковые
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Шерсть и шелк
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
+<!--                <span class="accordion__text">Современные</span>-->
+<!--                <span class="accordion__text">Дизайнерские</span>-->
+<!--                <span class="accordion__text">Килимы и сумахи</span>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="filtration__wrapper filtration__wrapper-5">
-            <button class="accordion">Узор <i></i></button>
-            <div class="panel">
-                <label class="checkbox-block">Абстракция
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Стертая классика
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Геометрия
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Цветы и растения
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Авангард
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
+<!--        <div class="filtration__wrapper filtration__wrapper-2">-->
+<!--            <button class="accordion">Размер <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <label class="checkbox-block">до 200 x 150 см-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">240 x 170 см-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">300 x 200 см-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">300 x 250 см-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">350 x 250 см-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">400 x 300 см-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">450 x 350 см-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">очень большие-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
 
-        <div class="filtration__wrapper filtration__wrapper-6">
-            <button class="accordion">Страна <i></i></button>
-            <div class="panel">
-                <label class="checkbox-block">Персидские
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Индийские
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Пакистанские
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Непальские
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Китайские
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Дагестанские
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Афганские
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Кавказские
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Турецкие
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Азербайджанские
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">Иранские
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
+<!--                <div class="filtration__wrapper-2-footer">-->
+<!--                    <button class="accordion accordion_nested">Указать свой размер <i></i></button>-->
+<!--                    <div class="panel">-->
+<!--                        <div class="accordion_nested-form">-->
+<!--                            <span class="accordion_nested-text">Длина</span>-->
+<!--                            <div class="accordion_nested-form-container">-->
+<!--                                <span class="accordion_nested-text accordion_nested-text-1">от</span>-->
+<!--                                <input class="accordion_nested-form-input" type="text">-->
+<!--                                <span class="accordion_nested-text accordion_nested-text-2">до</span>-->
+<!--                                <input class="accordion_nested-form-input" type="text">-->
+<!--                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="accordion_nested-form">-->
+<!--                            <span class="accordion_nested-text">Ширина</span>-->
+<!--                            <div class="accordion_nested-form-container">-->
+<!--                                <span class="accordion_nested-text accordion_nested-text-1">от</span>-->
+<!--                                <input class="accordion_nested-form-input" type="text">-->
+<!--                                <span class="accordion_nested-text accordion_nested-text-2">до</span>-->
+<!--                                <input class="accordion_nested-form-input" type="text">-->
+<!--                                <span class="accordion_nested-text accordion_nested-text-3">см.</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="filtration__wrapper filtration__wrapper-7">
-            <button class="accordion">Цена <i></i></button>
-            <div class="panel">
-                <label class="checkbox-block">до 100 000 &#8381;
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">от 100 000 до 350 000 &#8381;
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-block">от 350 000 &#8381;
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="mobil-filter__footer">
-        <button class="btn gold-button">Сбросить фильтр</button>
-        <button class="btn gold-button-bg">Применить фильтр</button>
-    </div>
-</div>
+<!--        <div class="filtration__wrapper filtration__wrapper-3">-->
+<!--            <button class="accordion">Форма <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <label class="checkbox-block">Круглые-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Прямоугольные-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Квадратные-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="filtration__wrapper filtration__wrapper-4">-->
+<!--            <button class="accordion">Материал <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <label class="checkbox-block">Шерстяные-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Шелковые-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Шерсть и шелк-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="filtration__wrapper filtration__wrapper-5">-->
+<!--            <button class="accordion">Узор <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <label class="checkbox-block">Абстракция-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Стертая классика-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Геометрия-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Цветы и растения-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Авангард-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="filtration__wrapper filtration__wrapper-6">-->
+<!--            <button class="accordion">Страна <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <label class="checkbox-block">Персидские-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Индийские-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Пакистанские-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Непальские-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Китайские-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Дагестанские-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Афганские-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Кавказские-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Турецкие-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Азербайджанские-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">Иранские-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="filtration__wrapper filtration__wrapper-7">-->
+<!--            <button class="accordion">Цена <i></i></button>-->
+<!--            <div class="panel">-->
+<!--                <label class="checkbox-block">до 100 000 &#8381;-->
+<!--                    <input type="checkbox" checked="checked">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">от 100 000 до 350 000 &#8381;-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--                <label class="checkbox-block">от 350 000 &#8381;-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="checkmark"></span>-->
+<!--                </label>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="mobil-filter__footer">-->
+<!--        <button class="btn gold-button">Сбросить фильтр</button>-->
+<!--        <button class="btn gold-button-bg">Применить фильтр</button>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <footer id="footer" class="footer">
@@ -1279,6 +1401,31 @@
 <script src="assets/js/libs.min.js"></script>
 <script>
     alert = function() {};
+
+    var catalogTrigger = document.querySelector('.filtration');
+    if(catalogTrigger){
+        $('body').addClass('catalog-body');
+    }
+
+    $('.filtration__btn-mobil').click(function () {
+        $('.filtration').addClass('active');
+        $('.catalog-body').addClass('overflowHidden');
+        $('.header__catalog').addClass('open');
+        $('#header').addClass('hasFilter').removeClass('noFilter');
+    });
+
+    $('.header__catalog-btn-filter').click(function () {
+        $('.filtration').addClass('active');
+        $('.catalog-body').addClass('overflowHidden');
+        $('.header__catalog').addClass('open');
+        $('#header').addClass('hasFilter').removeClass('noFilter');
+    });
+
+    $('.header__catalog-btn-close').click(function () {
+        $('.filtration').removeClass('active');
+        $('.catalog-body').removeClass('overflowHidden');
+        $('#header').addClass('noFilter').removeClass('hasFilter');
+    });
 </script>
 </body>
 </html>
