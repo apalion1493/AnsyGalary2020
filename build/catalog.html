@@ -1402,10 +1402,12 @@
 <script>
     alert = function() {};
 
+    // этот код добавляет класс к body если на странице присутствует фильтр, для изменения поведения header
     var catalogTrigger = document.querySelector('.filtration');
     if(catalogTrigger){
         $('body').addClass('catalog-body');
     }
+    //
 
     $('.filtration__btn-mobil').click(function () {
         $('.filtration').addClass('active');

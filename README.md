@@ -15,3 +15,5 @@ https://apalion1493.github.io/AnsyGalary2020/build/Portfolio.html
 
 https://apalion1493.github.io/AnsyGalary2020/build/Portfolio-example.html
 эта страница пока без адаптивности
+
+https://apalion1493.github.io/AnsyGalary2020/build/Articles.html
