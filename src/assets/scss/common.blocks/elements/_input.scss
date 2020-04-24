@@ -1,0 +1,30 @@
+.input-main {
+  background: #FFFFFF;
+  border: 1px solid #E1DDD6;
+  height: 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+
+
+  &_short {
+    max-width: 198px;
+  }
+
+  option {
+    color: #555555;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .input-main_short {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .input-main_short {
+    max-width: 198px;
+  }
+}

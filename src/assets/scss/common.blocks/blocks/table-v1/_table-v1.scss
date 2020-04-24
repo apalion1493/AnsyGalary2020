@@ -1,0 +1,42 @@
+.table-v1 {
+  margin-bottom: 0;
+
+  p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin-bottom: 0;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #555555;
+    display: block;
+  }
+
+  td {
+    padding: 5px 0 !important;
+  }
+
+  tbody {
+
+    tr > td {
+      border-top: none;
+    }
+
+    tr:last-child > td {
+      padding-bottom: 14px !important;
+    }
+  }
+
+  tfoot {
+
+
+    tr > td {
+      padding-top: 10px !important;
+    }
+  }
+}

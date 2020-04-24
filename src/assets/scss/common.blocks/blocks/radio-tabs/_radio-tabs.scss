@@ -1,0 +1,238 @@
+.radio-tabs {
+  position: relative;
+  width: 100%;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 68px;
+
+  .tab:last-child {
+    .radio-tabs__label {
+      border-bottom: none;
+    }
+  }
+
+  .form-control {
+    &::-webkit-input-placeholder {color: #555555;}
+    &::-moz-placeholder          {color:#555555;}
+    &:-moz-placeholder           {color:#555555;}
+    &:-ms-input-placeholder      {color:#555555;}
+  }
+
+  textarea {
+    resize: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+  }
+
+  .tab {
+    float: left;
+
+    .radio-tabs__label {
+      padding: 27px 15px 18px 15px;
+      border-bottom: 1px solid #DFDBD4;
+      margin-left: -1px;
+      position: relative;
+      left: 1px;
+      top: 0;
+      display: flex;
+      margin-bottom: 0;
+      min-height: 85px;
+      cursor: pointer;
+
+      i {
+        background: #FFFFFF;
+        border: 1px solid #BEA267;
+        min-width: 18px;
+        width: 18px;
+        height: 18px;
+        margin-right: 20px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3px;
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        color: #555555;
+      }
+
+      .radio-tabs__label-text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #555555;
+      }
+    }
+
+    input[type=radio] {
+      display: none;
+    }
+
+    &>.content {
+      display: none;
+      position: static;
+      top: 27px;
+      left: 0;
+      background: #F7F5F1;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+      padding-left: 55px;
+      padding-top: 0;
+    }
+  }
+
+  [type=radio]:checked ~ .radio-tabs__label {
+    z-index: 2;
+    background: #F7F5F1;
+    border-bottom: none;
+    border-top: 2px solid #F7F5F1;
+    top: -1px;
+
+    i {
+      &:before {
+        content: '';
+        background: #BEA267;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  [type=radio]:checked ~ .radio-tabs__label ~ .content {
+    display: block;
+    background: #F7F5F1;
+    top: -1px;
+    position: relative;
+    padding-bottom: 24px;
+  }
+}
+
+.radio-tabs__form {
+  padding-right: 50px;
+
+  .checkbox-block {
+    color: #333333;
+
+    &:hover {
+      color: #333333;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 17px;
+  }
+}
+
+.radio-tabs__download {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    display: none;
+  }
+
+  label {
+    border: 1px dashed #BEA267;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #555555;
+    cursor: pointer;
+    margin-bottom: 17px;
+  }
+
+  .radio-tabs__download-btn {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+    &:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+}
+
+.radio-tabs__form-text {
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+
+  margin-bottom: 12px;
+}
+
+.radio-tabs__btn {
+  height: 40px;
+}
+
+.radio-tabs__select {
+  background: #FFFFFF url("../img/icon/arrow-select.svg") no-repeat;
+  background-position: calc(100% - 10px) center;
+  background-size: 10px 6px;
+  appearance: none;
+  cursor: pointer;
+
+  &.change {
+    background: #FFFFFF url("../img/icon/arrow-select-2.svg") no-repeat;
+    background-position: calc(100% - 10px) center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .radio-tabs .tab>.content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 28px !important;
+  }
+
+  .radio-tabs__form {
+    padding-right: 0;
+  }
+
+  .radio-tabs {
+    margin-bottom: 15px;
+  }
+
+  .radio-tabs .tab {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      background: #FFFFFF;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      background: #FFFFFF;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

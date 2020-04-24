@@ -103,6 +103,11 @@
   .portfolioExample-page__imgContainer {
     position: relative;
   }
+
+  .portfolioExample-page__imgContainer span,
+  .portfolioExample-page__mobil-link-goBack {
+    display: none;
+  }
 }
 
 @media (max-width: 1080px) {
