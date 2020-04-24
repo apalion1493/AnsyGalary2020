@@ -16,3 +16,5 @@ https://apalion1493.github.io/AnsyGalary2020/build/Portfolio.html
 https://apalion1493.github.io/AnsyGalary2020/build/Portfolio-example.html
 
 https://apalion1493.github.io/AnsyGalary2020/build/Articles.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/select.html
