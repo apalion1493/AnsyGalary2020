@@ -170,6 +170,7 @@
 
     span {
       font-size: 0;
+      line-height: 0;
 
       &:before {
         font-size: 13px;
@@ -387,6 +388,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-height: 50px;
       }
 
       .product-card__description-mobil.product-card__description-mobil-all {
@@ -402,6 +404,7 @@
     .product-card__description-price-current {
       margin-right: 6px;
       font-size: 12px;
+      margin-top: 2px;
 
       span {
         &:before {
@@ -429,13 +432,24 @@
         }
 
         .product-card__description-price {
-          p, span {
+          margin-top: 5px;
+
+          p, .product-card__description-noPrice-text {
             font-size: 10px;
             margin-right: 0;
           }
 
+          .product-card__description-noPrice-text {
+            margin-top: 0;
+            line-height: 17px;
+          }
+
           p {
             font-size: 11px;
+          }
+
+          .product-card__description-price-current {
+            margin-right: 8px;
           }
         }
 

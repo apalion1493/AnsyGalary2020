@@ -32,6 +32,12 @@
   margin-bottom: 40px;
   //max-height: 362px;
   //height: 362px;
+
+  &:hover {
+    .article-card__title {
+      color: #bea267;
+    }
+  }
 }
 
 .article-card__title {
