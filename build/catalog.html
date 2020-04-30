@@ -10,6 +10,7 @@
     <!-- Appended styles for site -->
     <link rel="stylesheet" href="assets/css/oldStyle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-02.css">
 
     <style>
         .new-design2020 .mobil-filter__counter {
@@ -282,8 +283,8 @@
                         <div class="filtration__wrapper filtration__wrapper-1">
                             <button class="accordion">По стилю <span class="mobil-filter__counter">1</span> <i></i></button>
                             <div class="panel">
-                                <span class="accordion__text text-bold">Классические</span>
-                                <div class="accordion__list">
+                                <button class="accordion accordion_mini">Классические</button>
+                                <div class="panel panel_mini">
                                     <label class="checkbox-block">Традиционный
                                         <input type="checkbox" checked="checked">
                                         <span class="checkmark"></span>
@@ -302,9 +303,61 @@
                                     </label>
                                 </div>
 
-                                <span class="accordion__text">Современные</span>
-                                <span class="accordion__text">Дизайнерские</span>
-                                <span class="accordion__text">Килимы и сумахи</span>
+                                <button class="accordion accordion_mini active">Современные</button>
+                                <div style="display: none" class="panel panel_mini">
+                                    <label class="checkbox-block">Неоклассика
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Модерн
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Дизайнерские
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <button class="accordion accordion_mini active">Дизайнерские</button>
+                                <div style="display: none" class="panel panel_mini">
+                                    <label class="checkbox-block">Абстракция
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Стертая классика
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Геометрия
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Цветы и растения
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Авангард
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <button class="accordion accordion_mini active">Килимы и сумахи</button>
+                                <div style="display: none" class="panel panel_mini">
+                                    <label class="checkbox-block">Классические
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Современные
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-block">Винтажные
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
 

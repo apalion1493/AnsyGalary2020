@@ -1,0 +1,32 @@
+.new-design2020 {
+  .accordion_mini {
+    font-size: 14px;
+    line-height: 17px;
+    color: #333;
+    margin-bottom: 17px;
+    cursor: pointer;
+    text-transform: initial;
+    padding: 0;
+    font-weight: 700;
+
+    &:hover {
+      color: #bea267;
+    }
+
+    &.active {
+      font-weight: normal;
+    }
+  }
+
+  .panel_mini {
+    .checkbox-block:last-child {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 22px;
+  }
+}
+
+.new-design2020 .filtration__wrapper .panel {
+  background: initial;
+}
