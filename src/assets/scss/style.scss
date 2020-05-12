@@ -1,3 +1,5 @@
+@import "common.blocks/mixin";
+
 //FONTS
 @import "common.blocks/fonts";
 
@@ -37,3 +39,7 @@
 
 //main styles
 @import "common.blocks/common";
+
+
+/////////////////////////////////////////
+@import "common.blocks/pages/portfolio-page/long-product-page";

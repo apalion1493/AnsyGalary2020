@@ -489,11 +489,13 @@
     .slick-track {
       display: flex;
       align-items: flex-end;
+      margin-left: 0;
     }
 
     .slick-list.draggable {
       padding-top: 5px;
       padding-bottom: 30px;
+      width: 100%;
     }
   }
 
@@ -590,6 +592,7 @@
     .product-page__similar-card .product-card__img img {
       min-height: 522px;
       height: 522px;
+      //@include width-card(522px);
     }
   }
 
