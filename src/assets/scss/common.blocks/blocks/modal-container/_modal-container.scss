@@ -1,0 +1,179 @@
+.modal-container {
+  padding-right: 0 !important;
+  .modal-dialog {
+    max-width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    display: flex;
+  }
+
+  .modal-content {
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #ffffff;
+    width: 100%;
+  }
+
+  .modal-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .modal-body {
+    padding: 67px 50px 38px;
+
+    &.modal-body_myModalEnter {
+      padding-bottom: 75px;
+    }
+  }
+
+  .modal-container__title {
+    letter-spacing: 0.025em;
+    text-align: center;
+  }
+
+  .modal-container__form {
+    max-width: 309px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .form-group {
+      margin-bottom: 18px;
+
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+
+    .input-main {
+      height: 40px;
+      background: #FFFFFF;
+      border: 1px solid #C4C4C4;
+      font-size: 14px;
+      line-height: 17px;
+      color: #777777;
+
+      &:focus {
+        border-color: #BEA267;
+      }
+    }
+
+    .checkbox-block,
+    .checkbox-block:hover {
+      color: #333;
+    }
+  }
+
+  .modal-header .close {
+    font-size: 40px;
+    color: #575757;
+    opacity: 1;
+    font-weight: 300;
+    box-shadow: none;
+    outline: none;
+    width: 16px;
+    height: 16px;
+    line-height: normal;
+    text-shadow: none;
+    position: relative;
+    top: -12px;
+    left: -3px;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+.modal-container__form-item {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #777777;
+    background: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  &.active:before {
+    opacity: 1;
+  }
+
+  input::-webkit-input-placeholder {transition: 0.2s}
+  input::-moz-placeholder          {transition: 0.2s}
+  input:-moz-placeholder           {transition: 0.2s}
+  input:-ms-input-placeholder      {transition: 0.2s}
+
+  input:focus::-webkit-input-placeholder {opacity: 0}
+  input:focus::-moz-placeholder          {opacity: 0}
+  input:focus:-moz-placeholder           {opacity: 0}
+  input:focus:-ms-input-placeholder      {opacity: 0}
+}
+
+.modal-container__form-initials {
+  &:before {
+    content: 'Имя и Фамилия*';
+  }
+}
+
+.modal-container__form-company {
+  &:before {
+    content: 'Компания';
+  }
+}
+
+.modal-container__form-mail {
+  &:before {
+    content: 'E-mail*';
+  }
+}
+
+.modal-container__form-phone {
+  &:before {
+    content: 'Телефон*';
+  }
+}
+
+.modal-container__form-password {
+  &:before {
+    content: 'Пароль';
+  }
+}
+
+.modal-container__title-myModalEnter.modal-container__title {
+  margin-bottom: 39px;
+}
+
+.modal-container__btn {
+  max-width: 224px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 575.98px) {
+  .modal-container .modal-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+
+  .modal-container .modal-body.modal-body_myModalEnter {
+    padding-bottom: 50px;
+  }
+}

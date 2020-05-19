@@ -1,0 +1,50 @@
+.contact-block {
+  display: flex;
+  flex-direction: column;
+
+  .contact-block__link {
+    font-size: 16px;
+    line-height: 16px;
+    color: #555555;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.contact-block__item {
+  margin-bottom: 29px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.contact-block__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #555555;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.contact-block__text {
+  font-size: 16px;
+  line-height: 16px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.contact-block__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #777777;
+}
+
+@media (min-width: 992px) {
+  .contact-block__item {
+    max-width: 325px;
+  }
+}

@@ -1,0 +1,43 @@
+.text-container {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+  }
+
+  .text-container__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: #555555;
+    margin-bottom: 24px;
+  }
+}
+
+.text-container__paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.text-container__paragraph-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #555555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .text-container__paragraph-title {
+    line-height: normal;
+  }
+}

@@ -1,0 +1,29 @@
+.contacts-page-section {
+  margin-bottom: 85px;
+  margin-top: 9px;
+}
+
+.contacts-page-section__map {
+  width: 100%;
+  padding-right: 7px;
+}
+
+.contacts-page-section__wrapper {
+  padding-left: 7px;
+  padding-top: 10px;
+}
+
+.contacts-page-section__title {
+  margin-bottom: 44px;
+}
+
+@media (max-width: 991.98px) {
+  .contacts-page-section__map {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts-page-section__wrapper {
+    padding-left: 0;
+  }
+}
