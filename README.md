@@ -18,3 +18,11 @@ https://apalion1493.github.io/AnsyGalary2020/build/Portfolio-example.html
 https://apalion1493.github.io/AnsyGalary2020/build/Articles.html
 
 https://apalion1493.github.io/AnsyGalary2020/build/select.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/Designers.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/Delivery.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/Contacts.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/Shop.html
