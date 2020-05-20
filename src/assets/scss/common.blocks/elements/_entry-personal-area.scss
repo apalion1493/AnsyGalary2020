@@ -9,6 +9,7 @@
   .entry-personal-area_page-header-image {
     max-width: 321px;
     margin: auto 49px auto auto;
+    min-height: 357px;
   }
 
   .entry-personal-area__body {
@@ -42,6 +43,7 @@
     padding: 25px 51px 29px 46px;
     display: flex;
     flex-direction: column;
+    margin-top: auto;
   }
 
   .entry-personal-area__body-title {

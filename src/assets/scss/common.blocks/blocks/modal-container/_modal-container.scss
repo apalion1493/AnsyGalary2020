@@ -65,6 +65,15 @@
     .checkbox-block,
     .checkbox-block:hover {
       color: #333;
+
+      a {
+        color: #333333;
+        text-decoration: underline;
+
+        &:hover {
+          color: #BEA267;
+        }
+      }
     }
   }
 

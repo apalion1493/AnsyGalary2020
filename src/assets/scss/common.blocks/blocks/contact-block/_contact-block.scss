@@ -19,6 +19,12 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  .contact-block__description {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .contact-block__title {
