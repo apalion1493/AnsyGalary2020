@@ -26,3 +26,7 @@ https://apalion1493.github.io/AnsyGalary2020/build/Delivery.html
 https://apalion1493.github.io/AnsyGalary2020/build/Contacts.html
 
 https://apalion1493.github.io/AnsyGalary2020/build/Shop.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/hollow-catalog.html
+
+https://apalion1493.github.io/AnsyGalary2020/build/Product-for-design.html
