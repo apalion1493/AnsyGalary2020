@@ -1,0 +1,109 @@
+.new-design2020 {
+  .catalog-page__wrapper-hollow {
+    .catalog-page__scale {
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .catalog-page__switchGroup,
+    .catalog-section {
+      display: none;
+    }
+  }
+
+  .catalog-page__hollow-info {
+    display: flex;
+    align-items: center;
+    width: 568px;
+    position: absolute;
+    left: 50%;
+    margin-top: 69px;
+    transform: translateX(-50%);
+    margin-left: -9%;
+  }
+
+  .catalog-page__hollow-info-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-page__hollow-info-title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #555555;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .catalog-page__hollow-info-text {
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+  }
+
+  .catalog-page__hollow-info-img {
+    margin-right: 60px;
+    width: 127px;
+    height: 127px;
+    background: rgba(190, 162, 103, .1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.carpet-icon {
+  background: url("../img/icon/carpet-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 57px;
+  height: 57px;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .new-design2020 .catalog-page__hollow-info {
+    margin-left: 0;
+    left: 0;
+    transform: none;
+    position: relative;
+  }
+
+  .new-design2020 .catalog-page__hollow-info-img {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .new-design2020 .catalog-page__hollow-info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    flex-direction: column;
+    width: auto;
+    margin-top: 40px;
+  }
+
+  .new-design2020 .catalog-page__hollow-info-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .new-design2020 .catalog-page__hollow-info-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .new-design2020 .catalog-page__hollow-info-img {
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+
+    i {
+      max-width: 40px;
+    }
+  }
+}
