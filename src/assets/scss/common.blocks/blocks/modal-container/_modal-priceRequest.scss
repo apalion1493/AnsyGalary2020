@@ -178,8 +178,43 @@
     display: block;
   }
 
-  .modal-priceRequest__wrapper-connection-item.active {
+  .product-card__description-mobil-article {
+    .product-card__description-title {
+      text-align: center;
+    }
+  }
 
+  input {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .modal-priceRequest__btn {
+    height: 40px;
+    max-width: 313px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-priceRequest__wrapper-connection-list-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    flex: 1;
+    margin-bottom: 0;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  .modal-priceRequest__wrapper-connection-list-label input:checked ~ .modal-priceRequest__wrapper-connection-item {
     .modal-priceRequest__wrapper-connection-item-img {
       background: #BEA267;
     }
@@ -199,26 +234,6 @@
     .modal-icon-email {
       background: url("../img/modal-priceRequest/modal-icon-active-email.svg") no-repeat center;
     }
-  }
-
-  .product-card__description-mobil-article {
-    .product-card__description-title {
-      text-align: center;
-    }
-  }
-
-  input {
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .modal-priceRequest__btn {
-    height: 40px;
-    max-width: 313px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media (max-width: 767.98px) {
