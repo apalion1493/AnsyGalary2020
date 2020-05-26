@@ -20,10 +20,23 @@
 @media (max-width: 991.98px) {
   .contacts-page-section__map {
     padding-right: 0;
-    margin-bottom: 20px;
+    height: 300px;
   }
 
   .contacts-page-section__wrapper {
     padding-left: 0;
+  }
+
+  .contacts-page-section .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-page-section__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .contacts-page-section {
+    margin-bottom: 50px;
   }
 }

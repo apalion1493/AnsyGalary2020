@@ -129,7 +129,7 @@
     margin-bottom: 20px;
     margin-left: -3px;
 
-    span {
+    a {
       margin-right: 15px;
       min-width: 90px;
       cursor: pointer;
@@ -782,10 +782,11 @@
       margin-bottom: 10px;
     }
 
-    .product-page__block-size-block span {
+    .product-page__block-size-block a {
       padding-left: 38px;
       margin-right: 32px;
       margin-bottom: 10px;
+      min-width: 120px;
 
       &:before {
         content: '';
