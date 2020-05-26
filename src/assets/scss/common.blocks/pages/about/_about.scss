@@ -1,0 +1,128 @@
+.new-design2020 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .list-of-clients {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-bottom: 0;
+    flex: 1;
+
+    li {
+      padding-left: 24px;
+      padding-right: 24px;
+      text-align: center;
+
+      img {
+        margin-bottom: 32px;
+        max-height: 60px;
+        max-width: 180px;
+        transition: .4s ease;
+      }
+    }
+  }
+
+  .about-section_second-block-1 {
+    padding-bottom: 26px;
+    margin-bottom: 52px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 1px;
+      background: #222222;
+      opacity: .2;
+    }
+  }
+
+  .about-section_second-block-2 {
+    margin-bottom: 4px;
+
+    .about-section_second-block-2-info-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #222222;
+    }
+
+    img {
+      max-width: 450px;
+    }
+  }
+
+  .about-section_second-block-2-info {
+    padding-top: 17px;
+    margin-top: 23px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 70px;
+      height: 1px;
+      background: #BEA267;
+    }
+  }
+
+  .about-section_second__img-1 {
+    max-width: 237px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    span {
+      font-size: 14px;
+      line-height: 18px;
+      color: #555555;
+      margin-top: 16px;
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 1199.98px) {
+    .about-section_second-block-2 {
+      img {
+        padding-right: 0 !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .about-section_second__img-1 {
+      margin-right: auto;
+      margin-top: 25px;
+    }
+  }
+}
+
+#footer {
+  margin-top: auto;
+}
+
+.about-section_first {
+  margin-top: 29px;
+}
+
+

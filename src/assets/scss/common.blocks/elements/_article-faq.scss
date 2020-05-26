@@ -1,0 +1,97 @@
+#article a,
+#article a:active,
+#article a:focus,
+#article a:hover {
+  color: #bea267;
+}
+
+.article-faq-section {
+  margin-bottom: 18px;
+}
+
+#article-faq {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #555555;
+      margin-bottom: 24px;
+    }
+
+    a {
+      color: #555555;
+
+      &:hover {
+        color: #555555;
+      }
+    }
+
+    & > div {
+      margin-top: 22px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & > a {
+      display: block;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+      padding-left: 38px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid #BEA267;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      &:after {
+        content: '−';
+        color: #BEA267;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: normal;
+        position: absolute;
+        left: 7px;
+        top: 1px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        color: #555555;
+      }
+
+
+      &.collapsed {
+
+        &:after {
+          content: '+';
+          left: 7px;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
