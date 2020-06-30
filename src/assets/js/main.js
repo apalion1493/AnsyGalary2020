@@ -3,7 +3,6 @@ jQuery(function($){
         let div = $(".header__search");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
             $('.header__search').removeClass('active');
-            // $('#header').removeClass('openSearch');
         }
     });
 });
